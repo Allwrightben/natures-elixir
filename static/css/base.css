@@ -1,0 +1,94 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: url('/media/naturesalix.webp') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(100vh - 164px);
+    color: #555;
+    background-color: ivory;
+    font-family: "Mukta", sans-serif;
+}
+
+/* from Bulma */
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.dancing-script-font {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: rgba(86, 185, 158, 1);
+}
+
+.main-logo-link {
+    width: fit-content;
+}
+
+.searchbar {
+    border-radius: 10px !important;
+}
+
+.shop-now-button {
+    background: rgba(86, 185, 158, 1);
+    color: ivory;
+    min-width: 260px;
+}
+
+.btn-green {
+    background: rgba(86, 185, 158, 1);
+    color: ivory;
+}
+
+.shop-now-button:hover,
+.shop-now-button:active,
+.shop-now-button:focus,
+.btn-green:hover,
+.btn-green:active,
+.btn-green:focus {
+    background: ivory;
+    color: rgba(86, 185, 158, 1);
+}
+
+.text-black {
+    color: #000 !important;
+}
+
+.text-green {
+    color: rgba(86, 185, 158, 1) !important;
+}
+
+.border-black {
+    border: 2px solid rgba(86, 185, 158, 1) !important;
+}
+
+/* -------------------------------- Media Queries */
+
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 80%;
+    }
+}
+
+/* fixed top navbar only on medium and up */
+@media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+    .header-container {
+        padding-top: 164px;
+    }
+}
