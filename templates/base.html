@@ -2,7 +2,6 @@
 
 <!doctype html>
 <html lang="en">
-
 <head>
 
     {% block meta %}
@@ -30,7 +29,6 @@
 
     <title>Natures Elixir</title>
 </head>
-
 <body>
     <header class="container-fluid fixed-top">
         <div id="topnav" class="row pt-lg-2 d-none d-lg-flex">
@@ -42,7 +40,7 @@
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <form method="GET" action="">
                     <div class="input-group w-100">
-                        <input class="form-control border border-black searchbar" type="text" name="q" placeholder="Search our products...">
+                        <input class="form-control border border-black searchbar text-green mr-1" type="text" name="q" placeholder="Search our products...">
                         <div class="input-group-append">
                             <button class="form-control btn btn-green border border-black searchbar" type="submit">
                                 <span class="icon">
@@ -55,7 +53,7 @@
             </div>
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <ul class="list-inline list-unstyled text-center text-lg-right my-0">
-                    <li class="list-inline-item dropdown">
+                    <li class="list-inline-item dropdown nav-border">
                         <a class="text-green nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <div class="text-center">
                                 <div><i class="fas fa-user fa-lg"></i></div>
@@ -75,7 +73,7 @@
                             {% endif %}
                         </div>
                     </li>
-                    <li class="list-inline-item">
+                    <li class="list-inline-item nav-border">
                         <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-green{% endif %} nav-link" href="">
                             <div class="text-center">
                                 <div><i class="fas fa-shopping-bag fa-lg"></i></div>
@@ -91,6 +89,15 @@
                     </li>
                 </ul>
             </div>
+        </div>
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-light w-100 mobile-nav-border">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                {% include 'includes/mobile-top-header.html' %}
+                {% include 'includes/main-nav.html' %}
+            </nav>
         </div>
     </header>
 

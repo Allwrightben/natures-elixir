@@ -3,10 +3,10 @@ html {
 }
 
 body {
-    background: url('/media/naturesalix.webp') no-repeat center center fixed;
+    background: url('/media/mainimage.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
-    color: #555;
+    color: ivory;
     background-color: ivory;
     font-family: "Mukta", sans-serif;
 }
@@ -25,15 +25,32 @@ body {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    color: rgba(86, 185, 158, 1);
+    color: rgba(86, 185, 158, 1) !important;
 }
 
 .main-logo-link {
     width: fit-content;
+    border: 2px solid rgba(86, 185, 158, 1);
+    background-color: ivory;
 }
 
-.searchbar {
-    border-radius: 10px !important;
+.searchbar, .shop-now-button, .main-logo-link {
+    border-radius: 15px !important;
+}
+
+.nav-border {
+    border-radius: 15px;
+    border: 0;
+    background-color: rgba(255, 255, 240, 0.5);
+}
+
+.mobile-nav-border {
+    border: 0;
+    background-color: rgba(255, 255, 240, 0.5);
+}
+.navbar-toggler {
+    border: 0;
+    background-color: rgba(86, 185, 158, 1);
 }
 
 .shop-now-button {
@@ -52,9 +69,11 @@ body {
 .shop-now-button:focus,
 .btn-green:hover,
 .btn-green:active,
-.btn-green:focus {
+.btn-green:focus,
+.nav-link:hover {
     background: ivory;
     color: rgba(86, 185, 158, 1);
+    border-radius: 15px;
 }
 
 .text-black {
