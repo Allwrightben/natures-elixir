@@ -44,10 +44,6 @@ body {
     background-color: rgba(255, 255, 240, 0.5);
 }
 
-.mobile-nav-border {
-    border: 0;
-    background-color: rgba(255, 255, 240, 0.5);
-}
 .navbar-toggler {
     border: 0;
     background-color: rgba(86, 185, 158, 1);
@@ -109,5 +105,14 @@ body {
 
     .header-container {
         padding-top: 164px;
+    }
+}
+
+@media (max-width: 992px) {
+    .mobile-nav-bg {
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border: 0;
+        background-color: rgba(255, 255, 240, 1);
     }
 }
