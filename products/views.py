@@ -1,5 +1,6 @@
-from django.shortcuts import render, get_object_or_404, redirect
+from django.shortcuts import render, get_object_or_404, redirect, reverse
 from .models import Product, Vote
+from django.contrib import messages
 
 # Create your views here.
 
@@ -15,6 +16,9 @@ def all_products(request):
     return render(request, 'products/products.html', context)
 
 def product_vote(request, product_id):
+    # Get the product first
+    product = get_object_or_404(Product, id=product_id)
+    
     if request.method == 'POST' and request.user.is_authenticated:
         vote_type = request.POST.get('vote_type')
         product = get_object_or_404(Product, id=product_id)
@@ -33,6 +37,19 @@ def product_vote(request, product_id):
             # Create a new vote
             Vote.objects.create(product=product, user=request.user, vote=vote_value)
 
-        return redirect('products')  # Redirect to the product list or the specific product page
+        return redirect(reverse('product_detail', args=[product.id]))  # Redirect to the product list or the specific product page
 
-    return redirect('products')  # Redirect if not authenticated or not a POST request
+    # If the user is not authenticated, show a message
+    messages.error(request, "You need to be logged in to rate this product.")
+    return redirect(reverse('product_detail', args=[product.id]))  # Redirect if not authenticated or not a POST request
+
+def product_detail(request, product_id):
+    """ A view to show individual product details """
+
+    product = get_object_or_404(Product, pk=product_id)
+
+    context = {
+        'product': product,
+    }
+
+    return render(request, 'products/product_detail.html', context)
