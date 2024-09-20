@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User
 import uuid
 
 class Category(models.Model):
@@ -21,7 +22,7 @@ class Product(models.Model):
     name = models.CharField(max_length=254)
     description = models.TextField()
     price = models.DecimalField(max_digits=6, decimal_places=2)
-    rating = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
+    rating = models.IntegerField(null=True, blank=True)
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
 
@@ -33,3 +34,30 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
+    
+    # Method to count thumbs up votes
+    def thumbs_up_count(self):
+        return self.votes.filter(vote=Vote.THUMBS_UP).count()
+
+    # Method to count thumbs down votes
+    def thumbs_down_count(self):
+        return self.votes.filter(vote=Vote.THUMBS_DOWN).count()
+
+
+class Vote(models.Model):
+    THUMBS_UP = 1
+    THUMBS_DOWN = -1
+    VOTE_CHOICES = [
+        (THUMBS_UP, 'Thumbs Up'),
+        (THUMBS_DOWN, 'Thumbs Down'),
+    ]
+
+    product = models.ForeignKey(Product, related_name='votes', on_delete=models.CASCADE)
+    user = models.ForeignKey(User, related_name='votes', on_delete=models.CASCADE)
+    vote = models.SmallIntegerField(choices=VOTE_CHOICES)
+
+    class Meta:
+        unique_together = ('product', 'user')  # Ensure one vote per product per user
+
+    def __str__(self):
+        return f"{self.user.username} - {self.get_vote_display()} on {self.product.name}"
