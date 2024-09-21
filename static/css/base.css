@@ -118,6 +118,16 @@ body {
     }
 }
 
+/* For transparent header (on home page) */
+.header-transparent {
+    background-color: transparent;
+}
+
+/* For colored header (on products page) */
+.header-colored {
+    background-color: rgba(255, 255, 240, 1);
+}
+
 @media (max-width: 992px) {
     .mobile-nav-bg {
         border-bottom-left-radius: 15px;
