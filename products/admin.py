@@ -1,5 +1,6 @@
 from django.contrib import admin
 from .models import Product, Category, Vote
+from django.db import models
 
 
 class ProductAdmin(admin.ModelAdmin):

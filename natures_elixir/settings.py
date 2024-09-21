@@ -54,7 +54,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'allauth.account.middleware.AccountMiddleware', # needed for allauth
+    "allauth.account.middleware.AccountMiddleware",
 ]
 
 ROOT_URLCONF = 'natures_elixir.urls'
@@ -63,14 +63,14 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.join(BASE_DIR, 'templates'), 
+            os.path.join(BASE_DIR, 'templates'),
             os.path.join(BASE_DIR, 'templates', 'allauth'),
         ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
-                'django.template.context_processors.request', # allauth
+                'django.template.context_processors.request', # required by allauth
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
@@ -78,13 +78,13 @@ TEMPLATES = [
     },
 ]
 
-AUTHENTICATION_BACKENDS = (
+AUTHENTICATION_BACKENDS = [
     # Needed to login by username in Django admin, regardless of `allauth`
     'django.contrib.auth.backends.ModelBackend',
 
-    # `allauth` specific authentication methods, such as login by e-mail
+    # `allauth` specific authentication methods, such as login by email
     'allauth.account.auth_backends.AuthenticationBackend',
-)
+]
 
 SITE_ID = 1
 
@@ -141,18 +141,6 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 
 USE_TZ = True
-
-
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/5.1/howto/static-files/
-
-# URL for referencing static files
-STATIC_URL = '/static/'
-
-# Directory for your static files
-STATICFILES_DIRS = [
-    BASE_DIR / "static",
-]
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/

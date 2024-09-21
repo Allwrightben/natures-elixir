@@ -27,8 +27,8 @@ class Product(models.Model):
 
     def save(self, *args, **kwargs):
         if not self.sku:
-            # Generate a unique SKU (you can customize this logic)
-            self.sku = str(uuid.uuid4())[:12].upper()  # 12-character SKU
+            # Generate a unique SKU when saving the product
+            self.sku = str(uuid.uuid4())[:12].upper()
         super().save(*args, **kwargs)
 
     def __str__(self):

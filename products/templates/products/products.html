@@ -45,28 +45,6 @@
                                     <div class="row">
                                         <div class="col">
                                             <p class="lead mb-0 text-left font-weight-bold">£{{ product.price }}</p>
-
-                                            <!-- Display thumbs up/down and voting buttons -->
-                                            <div class="d-flex justify-content-between"> <!-- Updated class -->
-                                                <!-- Thumbs Up Button -->
-                                                <form method="POST" action="{% url 'product-vote' product.id %}">
-                                                    {% csrf_token %}
-                                                    <input type="hidden" name="vote_type" value="up">
-                                                    <button type="submit" class="btn btn-sm btn-success">
-                                                        <i class="fas fa-thumbs-up"></i> {{ product.thumbs_up_count }}
-                                                    </button>
-                                                </form>
-
-                                                <!-- Thumbs Down Button -->
-                                                <form method="POST" action="{% url 'product-vote' product.id %}">
-                                                    {% csrf_token %}
-                                                    <input type="hidden" name="vote_type" value="down">
-                                                    <button type="submit" class="btn btn-sm btn-danger">
-                                                        <i class="fas fa-thumbs-down"></i> {{ product.thumbs_down_count }}
-                                                    </button>
-                                                </form>
-                                            </div>
-
                                         </div>
                                     </div>
                                 </div>
