@@ -5,9 +5,8 @@
                 All Products
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="" class="dropdown-item text-green">By Price</a>
-                <a href="" class="dropdown-item text-green">By Rating</a>
-                <a href="" class="dropdown-item text-green">By Category</a>
+                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item text-green">By Price</a>
+                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item text-green">By Category</a>
                 <a href="{% url 'products' %}" class="dropdown-item text-green">All Products</a>
             </div>
         </li>
@@ -17,26 +16,26 @@
                 CBD
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="CBD-link">
-                <a href="" class="dropdown-item text-green">CBD Extracts</a>
-                <a href="" class="dropdown-item text-green">CBD Food</a>
-                <a href="" class="dropdown-item text-green">All CBD Products</a>
+                <a href="{% url 'products' %}?category=cbd_extracts" class="dropdown-item text-green">CBD Extracts</a>
+                <a href="{% url 'products' %}?category=cbd_food" class="dropdown-item text-green">CBD Food</a>
+                <a href="{% url 'products' %}?category=cbd_extracts,cbd_food" class="dropdown-item text-green">All CBD Products</a>
             </div>
         </li>
 
         <li class="nav-item">
-            <a class="logo-font font-weight-bold nav-link text-green mr-4" href="#" id="CBC-link">
+            <a class="logo-font font-weight-bold nav-link text-green mr-4" href="{% url 'products' %}?category=cbc" id="CBC-link">
                 CBC
             </a>
         </li>
 
         <li class="nav-item">
-            <a class="logo-font font-weight-bold nav-link text-green mr-4" href="#" id="CBG-link">
+            <a class="logo-font font-weight-bold nav-link text-green mr-4" href="{% url 'products' %}?category=cbg" id="CBG-link">
                 CBG
             </a>
         </li>
 
         <li class="nav-item">
-            <a class="logo-font font-weight-bold nav-link text-green mr-4" href="#" id="shilajit-link">
+            <a class="logo-font font-weight-bold nav-link text-green mr-4" href="{% url 'products' %}?category=shilajit" id="shilajit-link">
                 Shilajit
             </a>
         </li>
