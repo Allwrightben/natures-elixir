@@ -1,0 +1,149 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: url('/media/mainimage.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(100vh - 164px);
+    color: ivory;
+    background-color: ivory;
+    font-family: "Mukta", sans-serif;
+}
+
+/* from Bulma */
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.dancing-script-font {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: rgba(86, 185, 158, 1) !important;
+}
+
+.main-logo-link {
+    width: fit-content;
+    border: 2px solid rgba(86, 185, 158, 1);
+    background-color: ivory;
+}
+
+.searchbar, .shop-now-button, .main-logo-link {
+    border-radius: 15px !important;
+}
+
+.nav-border {
+    border-radius: 15px;
+    border: 0;
+    background-color: rgba(255, 255, 240, 0.5);
+}
+
+.navbar-toggler {
+    border: 0;
+    background-color: rgba(86, 185, 158, 1);
+}
+
+.shop-now-button {
+    background: rgba(86, 185, 158, 1);
+    color: ivory;
+    min-width: 260px;
+}
+
+.btn-green {
+    background: rgba(86, 185, 158, 1);
+    color: ivory;
+}
+
+.shop-now-button:hover,
+.shop-now-button:active,
+.shop-now-button:focus,
+.btn-green:hover,
+.btn-green:active,
+.btn-green:focus,
+.nav-link:hover {
+    background: ivory;
+    color: rgba(86, 185, 158, 1);
+    border-radius: 15px;
+}
+
+.text-black {
+    color: #000 !important;
+}
+
+.text-green {
+    color: rgba(86, 185, 158, 1) !important;
+}
+
+.border-black {
+    border: 2px solid rgba(86, 185, 158, 1) !important;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: ivory;
+    z-index: -1;
+}
+
+/* -------------------------------- Media Queries */
+
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 80%;
+    }
+}
+
+/* fixed top navbar only on medium and up */
+@media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+    .header-container {
+        padding-top: 164px;
+    }
+}
+
+/* For transparent header (on home page) */
+.header-transparent {
+    background-color: transparent;
+}
+
+/* For colored header (on products page) */
+.header-colored {
+    background-color: rgba(255, 255, 240, 1);
+}
+
+@media (max-width: 992px) {
+    .mobile-nav-bg {
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border: 0;
+        background-color: rgba(255, 255, 240, 1);
+    }
+}
+
+/* pad the top a bit when navbar is collapsed on mobile */
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 116px;
+    }
+
+    body {
+        height: calc(100vh - 116px);
+    }
+}
