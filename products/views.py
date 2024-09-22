@@ -53,11 +53,19 @@ def all_products(request):
         'current_sorting': current_sorting,
     }
 
+    return render(request, 'products/products.html', context)
+
+
+def product_detail(request, product_id):
+    """ A view to show individual product details """
+
+    product = get_object_or_404(Product, pk=product_id)
+
     context = {
-        'products': products,
+        'product': product,
     }
 
-    return render(request, 'products/products.html', context)
+    return render(request, 'products/product_detail.html', context)
 
 def product_vote(request, product_id):
     # Get the product first

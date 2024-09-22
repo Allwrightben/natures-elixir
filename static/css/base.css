@@ -80,7 +80,7 @@ body {
     color: rgba(86, 185, 158, 1) !important;
 }
 
-.border-black {
+.border-green {
     border: 2px solid rgba(86, 185, 158, 1) !important;
 }
 
@@ -92,6 +92,11 @@ body {
     position: fixed;
     background-color: ivory;
     z-index: -1;
+}
+
+a.category-badge > span.badge:hover {
+    background: rgba(86, 185, 158, 1) !important;
+    color: ivory !important;
 }
 
 /* -------------------------------- Media Queries */
