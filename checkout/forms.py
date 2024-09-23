@@ -8,8 +8,8 @@ class OrderForm(forms.ModelForm):
         fields = (
             'full_name', 'email', 'phone_number',
             'street_address1', 'street_address2',
-            'town_or_city', 'postcode', 'country',
-            'county',)
+            'town_or_city', 'postcode', 'county',
+            'country',)
 
     def __init__(self, *args, **kwargs):
         """
@@ -25,7 +25,7 @@ class OrderForm(forms.ModelForm):
             'town_or_city': 'Town or City',
             'street_address1': 'Street Address 1',
             'street_address2': 'Street Address 2',
-            'county': 'County/State',
+            'county': 'County',
         }
 
         self.fields['full_name'].widget.attrs['autofocus'] = True
@@ -38,3 +38,6 @@ class OrderForm(forms.ModelForm):
                 self.fields[field].widget.attrs['placeholder'] = placeholder
             self.fields[field].widget.attrs['class'] = 'stripe-style-input'
             self.fields[field].label = False
+
+        # Set 'United Kingdom' as a default value for the country and make it readonly
+        self.fields['country'].initial = 'United Kingdom'

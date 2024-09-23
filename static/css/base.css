@@ -41,7 +41,7 @@ body {
 .nav-border {
     border-radius: 15px;
     border: 0;
-    background-color: rgba(255, 255, 240, 0.5);
+    background-color: rgba(255, 255, 240, 0.8);
 }
 
 .navbar-toggler {
@@ -60,16 +60,23 @@ body {
     color: ivory;
 }
 
+.nav-link:hover,
+.nav-link:active,
+.nav-link:focus {
+    background-color: rgba(86, 185, 158, 1);
+    color: ivory !important;
+    border-radius: 15px;
+}
+
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
 .btn-green:hover,
 .btn-green:active,
-.btn-green:focus,
-.nav-link:hover {
+.btn-green:focus {
     background: ivory;
     color: rgba(86, 185, 158, 1);
-    border-radius: 15px;
+    border: 1px solid rgba(86, 185, 158, 1);
 }
 
 .text-black {
