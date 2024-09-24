@@ -8,7 +8,6 @@ body {
     height: calc(100vh - 164px);
     background-color: ivory;
     font-family: "Mukta", sans-serif;
-    color: ivory;
 }
 
 /* from Bulma */
@@ -85,6 +84,10 @@ body {
 
 .text-green {
     color: rgba(86, 185, 158, 1) !important;
+}
+
+.text-ivory {
+    color: ivory !important;
 }
 
 .border-green {
