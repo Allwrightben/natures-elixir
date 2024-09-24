@@ -40,4 +40,4 @@ class OrderForm(forms.ModelForm):
             self.fields[field].label = False
 
         # Set 'United Kingdom' as a default value for the country and make it readonly
-        self.fields['country'].initial = 'United Kingdom'
+        self.fields['country'].initial = 'UK'
