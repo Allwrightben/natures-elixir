@@ -53,3 +53,11 @@
         </li>
     </ul>
 </div>
+{% if request.user.is_authenticated %}
+        <div class="text-green nav-border welcome-message small d-none d-lg-block">
+            <div class="text-center py-1 px-2">
+                <i class="fas fa-smile"></i>
+                <p class="my-0 font-weight-bold">Welcome, {{ user }}!</p>
+            </div>
+        </div>
+{% endif %}

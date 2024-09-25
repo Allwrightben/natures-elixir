@@ -134,6 +134,31 @@ a.category-badge > span.badge:hover {
     background-color: rgba(255, 255, 240, 1);
 }
 
+/* ------------------------------- bootstrap toasts */
+
+.message-container {
+    position: fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 99999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 2px;
+}
+
+.welcome-message {
+    position: fixed;
+    right: 17px;
+    top: 105px;
+    transform: translateY(-50%);
+    z-index: 1000;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
