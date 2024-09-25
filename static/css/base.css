@@ -153,8 +153,8 @@ a.category-badge > span.badge:hover {
 
 .welcome-message {
     position: fixed;
-    right: 17px;
-    top: 105px;
+    left: 17px;
+    top: 102px;
     transform: translateY(-50%);
     z-index: 1000;
 }
