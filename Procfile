@@ -1,0 +1,1 @@
+web: gunicorn natures_elixir.wsgi:application

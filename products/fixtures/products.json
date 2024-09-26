@@ -1,0 +1,392 @@
+[
+    {
+      "model": "products.product",
+      "pk": 1,
+      "fields": {
+        "category": 1,
+        "sku": "B49E2B2E-76A",
+        "name": "Purple Dank 1000mg CBD Raw Paste with Natural Terpenes - Girl Scout Cookies",
+        "description": "Terpene infused CBD raw paste brought to you by Purple Dank, presented in an easy-to-use syringe applicator.\r\n\r\nPurple Dank raw CBD paste is made using a unique formulation with gold extract and cannabis derived terpenes. The terpenes have been carefully selected and extracted to enhance the wide range of flavour strains within the Purple Dank collection.\r\n\r\nAll components used within this raw CBD paste are CO2 extracted, organic, gluten-free, vegan friendly, and free from any harmful chemicals.\r\n\r\nPurple Dank raw CBD paste is best utilised by squeezing a small amount from the container and then taking it orally.\r\n\r\n- 1000mg CBD for 1ml\r\n\r\n- 500mg CBD for 0.5ml\r\n\r\n- Original terpene infused raw CBD paste.\r\n\r\n- Syringe applicator for easy administration.\r\n\r\n- A wide range of flavour strains available.\r\n\r\n- Free from harmful chemicals.\r\n\r\n- Fully lab tested, and safety checked.\r\n\r\n- 100% cannabis-derived terpenes.\r\n\r\n- THC content<0.2%.",
+        "price": "24.62",
+        "image_url": null,
+        "image": "girlscout.webp"
+      }
+    },
+    {
+      "model": "products.product",
+      "pk": 2,
+      "fields": {
+        "category": 1,
+        "sku": "AB9ECBC7-B3B",
+        "name": "CBD Leafline 1000mg CBD Crumble (86%) ZKITTLEZ 1g",
+        "description": "Novel Food application number: RP649\r\n- 1000mg CBD\r\n\r\n- 1g\r\n\r\n- 86% Broad Spectrum Distillate\r\n\r\n- THC: 0%\r\n\r\nCBD Leafline crumble is concentrated CBD meant for dabbing or vaping and is made from 86% CBD broad spectrum distillate infused with ZKITTLEZ natural terpenes.\r\n\r\nCo2 whole plant winterised extract.\r\n\r\nIdeal for those who are looking for a high concentration of CBD in one hit. \r\n\r\nDirections for use:\r\nBest used with a dab rig or a vape device that has a chamber facility for concentrates. Best used with a dab rig or a vape device that has a chamber facility for concentrates. Inhaling CBD reaches the bloodstream almost immediately and suits people who are looking for instant benefits.\r\n\r\nTerpene Profile: \r\nZKITTLEZ is an indica-dominant mix of Grape Ape and Grapefruit that is crossed with another undisclosed strain to produce this candy-flavoured cannabis bred by 3rd Gen Family and Terp Hogz. Emits a sweet, tropical blend of fruit flavours (predominantly grape) reminiscent of a bag of skittles.\r\n\r\nAroma: \r\nSweet, Berry. Grape\r\n\r\nSupplied in a reusable concentrate glass jar with child resistant lid.",
+        "price": "49.50",
+        "image_url": null,
+        "image": "gelatocrumblered.webp"
+      }
+    },
+    {
+      "model": "products.product",
+      "pk": 3,
+      "fields": {
+        "category": 1,
+        "sku": "A4C783B2-601",
+        "name": "CBD Leafline 1000mg CBD Crumble (86%) Gelato 1g",
+        "description": "Novel Food application number: RP649\r\n- 1000mg CBD\r\n\r\n- 1g\r\n\r\n- 86% Broad Spectrum Distillate\r\n\r\n- THC: 0%\r\n\r\nCBD Leafline crumble is concentrated CBD meant for dabbing or vaping and is made from 86% CBD broad spectrum distillate infused with ZKITTLEZ natural terpenes.\r\n\r\nCo2 whole plant winterised extract.\r\n\r\nIdeal for those who are looking for a high concentration of CBD in one hit. \r\n\r\nDirections for use:\r\nBest used with a dab rig or a vape device that has a chamber facility for concentrates. Inhaling CBD reaches the bloodstream almost immediately and suits people who are looking for instant benefits.\r\n\r\nTerpene Profile: \r\nThis hybrid strain is named for its dessert-like aroma. A blend of Sunset Sherbet and Thin Mint Girl Scout Cookies. Also known as �Larry Bird.�\r\n\r\nAroma: \r\nSweet, cake like, floral\r\n\r\nSupplied in a reusable concentrate glass jar with child resistant lid.",
+        "price": "49.50",
+        "image_url": null,
+        "image": "gelatocrumble.webp"
+      }
+    },
+    {
+      "model": "products.product",
+      "pk": 4,
+      "fields": {
+        "category": 1,
+        "sku": "E53703D3-3F5",
+        "name": "Purple Dank 1000mg CBD Raw Paste with Natural Terpenes - Gelato",
+        "description": "Terpene infused CBD raw paste brought to you by Purple Dank, presented in an easy-to-use syringe applicator.\r\n\r\nPurple Dank raw CBD paste is made using a unique formulation with gold extract and cannabis derived terpenes. The terpenes have been carefully selected and extracted to enhance the wide range of flavour strains within the Purple Dank collection.\r\n\r\nAll components used within this raw CBD paste are CO2 extracted, organic, gluten-free, vegan friendly, and free from any harmful chemicals.\r\n\r\nPurple Dank raw CBD paste is best utilised by squeezing a small amount from the container and then taking it orally.\r\n\r\n- 1000mg CBD for 1ml\r\n\r\n- 500mg CBD for 0.5ml\r\n\r\n- Original terpene infused raw CBD paste.\r\n\r\n- Syringe applicator for easy administration.\r\n\r\n- A wide range of flavour strains available.\r\n\r\n- Free from harmful chemicals.\r\n\r\n- Fully lab tested, and safety checked.\r\n\r\n- 100% cannabis-derived terpenes.\r\n\r\n- THC content<0.2%.",
+        "price": "24.62",
+        "image_url": null,
+        "image": "gelatopatse.webp"
+      }
+    },
+    {
+      "model": "products.product",
+      "pk": 5,
+      "fields": {
+        "category": 1,
+        "sku": "18F5E4BD-EB0",
+        "name": "Purple Dank 1000mg CBD Raw Paste with Natural Terpenes - Tangerine Dream",
+        "description": "Terpene infused CBD raw paste brought to you by Purple Dank, presented in an easy-to-use syringe applicator.\r\n\r\nPurple Dank raw CBD paste is made using a unique formulation with gold extract and cannabis derived terpenes. The terpenes have been carefully selected and extracted to enhance the wide range of flavour strains within the Purple Dank collection.\r\n\r\nAll components used within this raw CBD paste are CO2 extracted, organic, gluten-free, vegan friendly, and free from any harmful chemicals.\r\n\r\nPurple Dank raw CBD paste is best utilised by squeezing a small amount from the container and then taking it orally.\r\n\r\n- 1000mg CBD for 1ml\r\n\r\n- 500mg CBD for 0.5ml\r\n\r\n- Original terpene infused raw CBD paste.\r\n\r\n- Syringe applicator for easy administration.\r\n\r\n- A wide range of flavour strains available.\r\n\r\n- Free from harmful chemicals.\r\n\r\n- Fully lab tested, and safety checked.\r\n\r\n- 100% cannabis-derived terpenes.\r\n\r\n- THC content<0.2%.",
+        "price": "24.62",
+        "image_url": null,
+        "image": "tangerinedream.webp"
+      }
+    },
+    {
+      "model": "products.product",
+      "pk": 6,
+      "fields": {
+        "category": 1,
+        "sku": "B4200897-A34",
+        "name": "CBC+ 100% Pure CBC Isolate - 1g",
+        "description": "As the first brand to offer full CBC (Cannabichromene) product within their product range, this CBC+ Isolate offers 1g of pure 100% CBC isolate for any to experience. You can use the CBC Isolate for a variety of items such as e-liquids, edibles, oils and skincare products for a few choice examples.\r\n\r\nAmong it's benefits and powerful effects, CBC is THC free so you will not feel any psychoactive effects when taking any amount of it. Like all CBC+ products, it has been subject to independent third party lab tests to ensure it's safety, potency and quality before it's availability.\r\n\r\n1g (1000mg) of CBC Isolate\r\n1ml Syringe\r\n100% Pure CBC Content\r\nLab-tested for Safety, Purity, and Potency\r\nTHC Free\r\nWhat is CBC?\r\n\r\nCBC is one of the 'Big 6' of CBDs within medical research but it often found in lower concentrates than CBD (Cannabidiol) and THC (Tetrahydrocannabinol) during hemp extraction and therefore less studied than either. But because of that, it is of higher value and research on CBC has shown that it is a powerful, non-psychoactive cannabinoid in it's own right and has been linked towards helping to reduce acne, depressive symptoms, pain and improve cognitive functions among it's various benefits.\r\n\r\nCaution: Do not consume if under the age of 18. Do not consume if you are pregnant or breastfeeding. Do not consume if you are taking a regular dose of medication. If you have any health concerns, please contact a healthcare professional. Do not exceed a limit of 70 milligrams (mg) in a 24 hour period. If experiencing adverse symptoms stop use immediately. If symptoms persist, seek medical advice immediately. Always read the label and use only as directed.\r\n\r\nThis product should not be used as a replacement for medicine or a healthy diet.\r\n\r\nIngredients: Pure CBC Isolate, THC<0.2%",
+        "price": "41.12",
+        "image_url": null,
+        "image": "isolateextract.webp"
+      }
+    },
+    {
+      "model": "products.product",
+      "pk": 7,
+      "fields": {
+        "category": 4,
+        "sku": "C98034D5-DFB",
+        "name": "Realest CBD 1000mg CBG Crumble",
+        "description": "Containing up to 94% of pure, concentrated CBG that's been extracted from hemp, the Realest CBD 1000mg CBG Crumble guarantees purity and consistency for those looking to make their own CBG products. Similar to CBD crumble, it looks and feels glossy, wax like and crisp but can be broken easily when handled with. As a raw material, the CBG crumble's concentrate is at it's fullest, meaning you'll receive the full, strong effect of it once used.\r\n\r\n- 94% Pure CBG Crumble\r\n\r\n- 1000mg CBG\r\n\r\n- Free from harmful chemicals\r\n\r\n- Naturally extracted\r\n\r\n- Independently tested for safety and purity\r\n\r\nIngredients: Pure CBG Crumble\r\n\r\nTHC Content<0.2%",
+        "price": "30.11",
+        "image_url": null,
+        "image": "realestcrumble.webp"
+      }
+    },
+    {
+      "model": "products.product",
+      "pk": 8,
+      "fields": {
+        "category": 1,
+        "sku": "6E600C4D-FC9",
+        "name": "Purple Dank 1000mg CBD Raw Paste with Natural Terpenes - Zkittlez",
+        "description": "Terpene infused CBD raw paste brought to you by Purple Dank, presented in an easy-to-use syringe applicator.\r\n\r\nPurple Dank raw CBD paste is made using a unique formulation with gold extract and cannabis derived terpenes. The terpenes have been carefully selected and extracted to enhance the wide range of flavour strains within the Purple Dank collection.\r\n\r\nAll components used within this raw CBD paste are CO2 extracted, organic, gluten-free, vegan friendly, and free from any harmful chemicals.\r\n\r\nPurple Dank raw CBD paste is best utilised by squeezing a small amount from the container and then taking it orally.\r\n\r\n- 1000mg CBD for 1ml\r\n\r\n- 500mg CBD for 0.5ml\r\n\r\n- Original terpene infused raw CBD paste.\r\n\r\n- Syringe applicator for easy administration.\r\n\r\n- A wide range of flavour strains available.\r\n\r\n- Free from harmful chemicals.\r\n\r\n- Fully lab tested, and safety checked.\r\n\r\n- 100% cannabis-derived terpenes.\r\n\r\n- THC content<0.2%.",
+        "price": "24.62",
+        "image_url": null,
+        "image": "zkittles.webp"
+      }
+    },
+    {
+      "model": "products.product",
+      "pk": 9,
+      "fields": {
+        "category": 1,
+        "sku": "A2FB5CB7-58D",
+        "name": "Purple Dank 1000mg CBD Raw Paste with Natural Terpenes - Biscotti",
+        "description": "Terpene infused CBD raw paste brought to you by Purple Dank, presented in an easy-to-use syringe applicator.\r\n\r\nPurple Dank raw CBD paste is made using a unique formulation with gold extract and cannabis derived terpenes. The terpenes have been carefully selected and extracted to enhance the wide range of flavour strains within the Purple Dank collection.\r\n\r\nAll components used within this raw CBD paste are CO2 extracted, organic, gluten-free, vegan friendly, and free from any harmful chemicals.\r\n\r\nPurple Dank raw CBD paste is best utilised by squeezing a small amount from the container and then taking it orally.\r\n\r\n- 1000mg CBD for 1ml\r\n\r\n- 500mg CBD for 0.5ml\r\n\r\n- Original terpene infused raw CBD paste.\r\n\r\n- Syringe applicator for easy administration.\r\n\r\n- A wide range of flavour strains available.\r\n\r\n- Free from harmful chemicals.\r\n\r\n- Fully lab tested, and safety checked.\r\n\r\n- 100% cannabis-derived terpenes.\r\n\r\n- THC content<0.2%.",
+        "price": "24.62",
+        "image_url": null,
+        "image": "biscotti.webp"
+      }
+    },
+    {
+      "model": "products.product",
+      "pk": 10,
+      "fields": {
+        "category": 1,
+        "sku": "5E27DC0A-EFA",
+        "name": "Purple Dank 1000mg CBD Raw Paste with Natural Terpenes - Skywalker OG",
+        "description": "Terpene infused CBD raw paste brought to you by Purple Dank, presented in an easy-to-use syringe applicator.\r\n\r\nPurple Dank raw CBD paste is made using a unique formulation with gold extract and cannabis derived terpenes. The terpenes have been carefully selected and extracted to enhance the wide range of flavour strains within the Purple Dank collection.\r\n\r\nAll components used within this raw CBD paste are CO2 extracted, organic, gluten-free, vegan friendly, and free from any harmful chemicals.\r\n\r\nPurple Dank raw CBD paste is best utilised by squeezing a small amount from the container and then taking it orally.\r\n\r\n- 1000mg CBD for 1ml\r\n\r\n- 500mg CBD for 0.5ml\r\n\r\n- Original terpene infused raw CBD paste.\r\n\r\n- Syringe applicator for easy administration.\r\n\r\n- A wide range of flavour strains available.\r\n\r\n- Free from harmful chemicals.\r\n\r\n- Fully lab tested, and safety checked.\r\n\r\n- 100% cannabis-derived terpenes.\r\n\r\n- THC content<0.2%.",
+        "price": "24.62",
+        "image_url": null,
+        "image": "skywalker.webp"
+      }
+    },
+    {
+      "model": "products.product",
+      "pk": 11,
+      "fields": {
+        "category": 1,
+        "sku": "DD08B2EA-4E9",
+        "name": "Purple Dank 1000mg CBD Raw Paste with Natural Terpenes - Sour Diesel",
+        "description": "Terpene infused CBD raw paste brought to you by Purple Dank, presented in an easy-to-use syringe applicator.\r\n\r\nPurple Dank raw CBD paste is made using a unique formulation with gold extract and cannabis derived terpenes. The terpenes have been carefully selected and extracted to enhance the wide range of flavour strains within the Purple Dank collection.\r\n\r\nAll components used within this raw CBD paste are CO2 extracted, organic, gluten-free, vegan friendly, and free from any harmful chemicals.\r\n\r\nPurple Dank raw CBD paste is best utilised by squeezing a small amount from the container and then taking it orally.\r\n\r\n- 1000mg CBD for 1ml\r\n\r\n- 500mg CBD for 0.5ml\r\n\r\n- Original terpene infused raw CBD paste.\r\n\r\n- Syringe applicator for easy administration.\r\n\r\n- A wide range of flavour strains available.\r\n\r\n- Free from harmful chemicals.\r\n\r\n- Fully lab tested, and safety checked.\r\n\r\n- 100% cannabis-derived terpenes.\r\n\r\n- THC content<0.2%.",
+        "price": "24.62",
+        "image_url": null,
+        "image": "sourdiesel.webp"
+      }
+    },
+    {
+      "model": "products.product",
+      "pk": 12,
+      "fields": {
+        "category": 5,
+        "sku": "90469FCD-352",
+        "name": "Feel Supreme Altai Shilajit Resin - 50g",
+        "description": "Altai Shilajit Resin is the result of a centuries long process of decomposing organic plant matter and minerals. Feel Supreme believe that the benefits are well worth the wait. Shilajit has been a common feature of Ayurvedic medicine for years. It is extremely rich in fulvic acid and humid acid. Fulvic acid has many proven benefits such as improving gut health and keeping your skin healthy. Himalayan Shilajit is also extremely rich in trace minerals such as magnesium, zinc and potassium to name just a few. Benefits of these minerals include; anti-ageing, heart health, reducing stress, depression and anxiety, improving stamina and performance as well as support for your bones and joints.\r\n\r\nMade In The UK\r\n50g Altai Shilajit Resin\r\nAltai Mountain Extract\r\nUp To 125 Servings\r\nServing Spoon Included\r\nAnti-Ageing\r\nRich In Minerals\r\nBoosts ATP & Testosterone\r\nRaw, Pure & 100% Natural\r\nIndependently Tested For Impurities\r\nDosage: Use the spoon provided. Allow 2 spoons (400mg � the size of a small pea) of shilajit resin to dissolve in hot water.\r\n\r\nPrecautions: Don�t take shilajit if you have sickle cell anemia, hemochromatosis (too much iron in your blood), or thalassemia. It�s possible to be allergic to this supplement. Stop taking shilajit if you develop rash, increased heart rate, or dizziness. Do not consume if taking iron supplements.\r\n\r\nIngredients: 100% Pure Altai Shilajit Resin",
+        "price": "60.50",
+        "image_url": null,
+        "image": "shilajitresin.webp"
+      }
+    },
+    {
+      "model": "products.product",
+      "pk": 13,
+      "fields": {
+        "category": 2,
+        "sku": "443A64FB-BDC",
+        "name": "Bnatural 750mg Full Spectrum CBD Hemp Protein Powder - 500g",
+        "description": "Novel Food application number: RP47/RP821\r\nA dietary supplement made from hemp seeds, Bnatural's 750mg Full Spectrum CBD Hemp Protein Powder can help you achieve your fitness goals when it is used as part of a balanced diet and exercise regime. These seeds are especially high in protein, providing all the essential amino acids your body needs to build muscle and repair tissue. Bnatural's CBD Hemp Protein Powder is also an excellent source of fibre and essential fatty acids, therefore making it an ideal way to boost your health and fitness levels.\r\n\r\n750mg Full Spectrum CBD\r\n500g Pack\r\n25 x 20g Servings\r\n30mg CBD Per Serving\r\n200mg Vitamin C Per Serving\r\nVegan Friendly\r\n100% Natural\r\nGluten Free\r\nPlant Protein\r\nImmune Support\r\nDirections: Add 20g of Hemp Protein Powder to your pre and post workout shake or your favourite smoothie recipe. Shake & enjoy.\r\n\r\nStorage & Cautions: To ensure freshness and quality we suggest you store your protein powder in its outer packaging, away from excess heat. Avoid direct light and keep in a dry non-humid environment. Keep out of reach of children. Do not use if pregnant or breastfeeding. Do not exceed more than 70mg CBD per day.\r\n\r\nIngredients: Hemp Protein Powder, Milled Hemp (750mg CBD), Vitamin C\r\n\r\nTHC Content<0.2%",
+        "price": "41.25",
+        "image_url": null,
+        "image": "hemppowder.webp"
+      }
+    },
+    {
+      "model": "products.product",
+      "pk": 14,
+      "fields": {
+        "category": 2,
+        "sku": "35BD4FF6-570",
+        "name": "The Shroom Shop Chaga Mushroom 90000mg Powder",
+        "description": "Help free yourself of free radicals and bring back the radiant, healthier and younger looking version of yourself, with The Shroom Shop's anti-ageing, immune-boosting Chaga Mushroom Powder. Since gaining popularity in the western world, Chaga mushrooms are proving extremely popular for their detoxifying and anti-inflammatory properties, resulting in a healthier �you� inside and out. With 90,000mg of powder, it will last approximately up to 2 months with 60 servings. Just add one scoop to any food or drink (with Scoop Included) and you're all set!\r\n\r\n90,000mg of Active Pure Chaga Mushroom Extract\r\n60 x 1500mg Servings\r\nAnti-Ageing\r\nImmune Boosting\r\nDetoxifying\r\nApprox. 2 Months Supply\r\nAdd To Any Food/Drink With Scoop\r\nIngredients: Chaga Mushroom Extract, (30% Polysaccharides).",
+        "price": "46.04",
+        "image_url": null,
+        "image": "changamush.webp"
+      }
+    },
+    {
+      "model": "products.product",
+      "pk": 15,
+      "fields": {
+        "category": 2,
+        "sku": "F26BF628-9A8",
+        "name": "Nootrocan 750mg Full Spectrum CBD Nootropic Dried Fruits - 300g",
+        "description": "Novel Food application number: RP438\r\nDerived from organically grown USA hemp alongside varying all natural ingredients designed across four different flavours, these Nootrocan 750mg Full Spectrum CBD Nootropic Dried Fruits will give users the experience to enjoy such organic edible treats infused with pure CBD goodness. Taking one of these Dried Fruits offers not just CBD benefits but nootropic ones that will give you cognitive enhancements to help with one's memory, awareness and concentration. All of these have been fully lab tested to ensure that they are free from chemicals and pesticides as well as being 100% vegan friendly. Furthermore, the safety, purity and potency of these Nootrocan CBD Dried Fruits are fully guaranteed as well.\r\n\r\n750mg Full Spectrum CBD\r\n300g Container\r\nNootropic\r\nFully lab tested\r\nFree from harmful chemicals & pesticides\r\nVegan Friendly\r\nDairy Free\r\nGMP Certified\r\nNON-GMO\r\n100% USA Hemp\r\nFlavours:\r\nFocus & Memory\r\nIngredients: Apricot, CBD Extract\r\n\r\nKeep Calm\r\nIngredients: Peach, CBD Extract\r\n\r\nPlant Based Immunity\r\nIngredients: Pineapple, CBD Extract\r\n\r\nPlant Based Performance\r\nIngredients: Mango, CBD Extract\r\n\r\nCaution: Do not consume if under the age of 18. Do not consume if you are pregnant or breastfeeding. Do not consume if you are taking a regular course of medicine. Do not consume if you have any health concerns. Please consult with with a health professional. Do not exceed a limit of 70mg CBD within a 24 hour period. if you are experiencing any side effects, stop use immediately. If symptoms persist, please seek health advice immediately. Always read the instructions as directed. This product should not be considered as a replacement for medicine or a healthier diet.\r\n\r\nTHC content<0.2%",
+        "price": "72.88",
+        "image_url": null,
+        "image": "nootrocan.webp"
+      }
+    },
+    {
+      "model": "products.product",
+      "pk": 16,
+      "fields": {
+        "category": 2,
+        "sku": "5ACD5B23-639",
+        "name": "Hempthy 1000mg CBD Pick n Mix Gummies - 50 Pieces",
+        "description": "Novel Food application number: RP349\r\nHempthy are an award-winning CBD Manufacturer due to their outstanding quality of CBD products. They take great care in the manufacturing process to deliver premium products to customers across the globe. They source only the best quality CBD by using the finest American sourced CBD isolate (99.9% pure) that's manufactured in the UK.\r\n\r\nWith CBD Gummies, they are a great way to enjoy CBD on the move without the extra sugar and calories. Hempthy's sugar-free gummies are made using the finest quality CBD, sweeteners & flavouring to pack a punch of sweet gummy goodness to brighten up your day.\r\n\r\nTHC Free\r\nHempthy's CBD Gummies are THC free. Made with CBD Isolate (99.9% pure) so there are no other psychoactive cannabinoids that will get you �high�.\r\n\r\n1000mg CBD\r\n50 Gummies per Pack\r\n20mg CBD per Gummy\r\nHelps promote Health & Wellbeing\r\nTHC Free\r\nVegan Friendly\r\nIngredients: Cannabidiol Isolate (1000mg), Glucose Syrup* (Sulphites), Sugar, Corn Starch, Water, Acids (Citric Acid, Malic Acid), Acity Regulator (E331), Flavourings, Colour (E102, E129, E133, E132). For allergens, see ingredients in bold.\r\n\r\nTHC Content<0.2%",
+        "price": "32.98",
+        "image_url": null,
+        "image": "cbdgummies.webp"
+      }
+    },
+    {
+      "model": "products.product",
+      "pk": 17,
+      "fields": {
+        "category": 2,
+        "sku": "3F472A0F-9EA",
+        "name": "Body and Mind Botanicals 300mg CBD Montreal Steak Rub Cannabis Seasoning - 100g",
+        "description": "Novel Food Exempt.\r\nWith their unique blend of herbs and spices cannot be found anywhere else, Body and Mind Botanicals offer their pure, organic flavoured Cannabis Seasoning. Used for centuries as a food ingredient, hemp only does it provide a variety of health benefits but can also enhance flavours and balance meals to suit any pallet. The Montreal Steak Rub flavour obviously will make for fantastic seasoning on steaks wit it's sturdy, robust flavour.\r\n\r\n300mg CBD Per Pouch\r\n30x Portions\r\n5mg CBD Per Teaspoon\r\nAdvisory: Consult your GP before consuming this product. It is advised to leave a two hour gap between CBD and medication. For medication that carries a grapefruit warning, a four hour gap is advised. Check with your health professional if pregnant or breastfeeding. Do not consume more than 70mg of CBD per day.\r\n\r\nIngredients: Organic Hemp (Cannabis Sativa L.) (67%) Salt, Dried Garlic (22%), Black Pepper (21%), Dill Seeds, Coriander Seeds, Dried Chillies, Sunflower Oil, Flavouring, Colour (Paprika Extract)\r\n\r\nTHC Content<0.2%",
+        "price": "16.50",
+        "image_url": null,
+        "image": "steakrub.webp"
+      }
+    },
+    {
+      "model": "products.product",
+      "pk": 18,
+      "fields": {
+        "category": 2,
+        "sku": "5D0DC0D6-531",
+        "name": "The Shroom Shop Turkey Tail Mushroom 90000mg Powder",
+        "description": "As one of the most researched and studied of all medicinal mushrooms, Turkey Tail is in a class of its own and an amazing immune boosting mushroom just alone. Packed full of anti-oxidants that improve the ability of the immune system�s natural defence cells which protect the body against illness. It is especially effective against the types of viruses responsible for causing colds and flu. With 90g supply of Pure Turkey Tail Mushroom Extract within this Shroom Shop Powder, it will last approximately up to 2 months. With any food or drink, just add a scoop of powder to any and you're all set!\r\n\r\n90g of Active Pure Turkey Tail Mushroom Extract\r\nReduces Fatigue\r\nSupports Gut Health\r\nImmune Boosting\r\nImproves Athletic Performance\r\nApprox. 2 Months Supply\r\nIngredients: Turkey Tail Mushroom Extract, (30% Polysaccharides).",
+        "price": "46.04",
+        "image_url": null,
+        "image": "turkeytail.webp"
+      }
+    },
+    {
+      "model": "products.product",
+      "pk": 19,
+      "fields": {
+        "category": 2,
+        "sku": "8861CEBF-DB7",
+        "name": "The Shroom Shop Cordyceps Mushroom 90000mg Powder",
+        "description": "Meet Cordyceps, your new new training partner. As a way for those looking to boost athletic performance, reduce fatigue and enhance their well-being with an natural supplement then this is it. Further backed up by science and increasing in popularity amongst the average-joe and athletes alike, these super shrooms can help you surpass your goals and smash your PB. The 90,000mg of pure, active Cordyceps mushroom powder will last around 2 months when used and with the scoop included, you can it to any food or drink you desire.\r\n\r\n90,000mg of Active Pure Cordyceps Mushroom Extract\r\n60 x 1500mg Servings\r\nImmune Boosting\r\nStress/Anxiety Relief\r\nEnhanced Mood & Wellbeing\r\nApprox. 2 Months Supply\r\nAdd To Any Food/Drink With Scoop\r\nIngredients: Cordyceps Mushroom Extract, (30% Polysaccharides).",
+        "price": "46.04",
+        "image_url": null,
+        "image": "cordy.webp"
+      }
+    },
+    {
+      "model": "products.product",
+      "pk": 20,
+      "fields": {
+        "category": 2,
+        "sku": "F175ED06-DA8",
+        "name": "Hempthy 1000mg CBD Fizzy Sour Peach Rings Gummies - 50 Pieces",
+        "description": "Novel Food application number: RP349\r\nHempthy are an award-winning CBD Manufacturer due to their outstanding quality of CBD products. They take great care with their manufacturing process to deliver premium quality products to customers across the globe. They source only the best quality CBD by using the finest American sourced CBD isolate (99.9% pure) that's manufactured in the UK.\r\n\r\nWith the Fizzy Sour Peach Rings, they are a great way to enjoy CBD on the move without the extra sugar and calories. Hempthy's sugar-free gummies are made using the finest quality CBD, sweeteners & flavouring to pack a punch of Sweet Gummy goodness and brighten up your day.\r\n\r\nTHC Free\r\nHempthy's CBD Gummies are THC free. Made with CBD Isolate (99.9% pure) so there are no other psychoactive cannabinoids that will get you �high�.\r\n\r\n1000mg CBD\r\n50 Gummies per Pack\r\n20mg CBD per Gummy\r\nHelps promote Health & Wellbeing\r\nTHC Free\r\nVegan Friendly\r\nIngredients: Cannabidiol Isolate (1000mg), Glucose Syrup* (Sulphites), Sugar, Corn Starch, Water, Acids (Citric Acid, Malic Acid), Acidity Regulator (E331), Flavourings, Colour (E102, E129, E133, E132). For allergens, see ingredients in bold.\r\n\r\nTHC Content<0.2%",
+        "price": "32.98",
+        "image_url": null,
+        "image": "cbdgummiespeach.webp"
+      }
+    },
+    {
+      "model": "products.product",
+      "pk": 21,
+      "fields": {
+        "category": 2,
+        "sku": "F714BE66-6D7",
+        "name": "The Shroom Shop Lion's Mane Mushroom 90000mg Powder",
+        "description": "For use in centuries, the brain boosting Lion�s Mane mushroom has been used to improve cognition. Further studies have shown its ability as a great neuro (brain) support supplement and an effective aid in memory and focus enhancement. After tasting some of this powder, your senses will feel supercharged where your A game will be switched on during work or studying. The entire 90,000mg supply of Lion's Mane Mushroom Powder will last approximately 2 months with regular use. With a single scoop, you can add this to any food or drink you wish.\r\n\r\n90,000mg of Active Pure Lion's Mane Mushroom Extract\r\n60 x 1500mg Servings\r\nNeuro Support\r\nImproves Cognition\r\nMemory & Focus Boosting\r\nApprox. 2 Months Supply\r\nAdd To Any Food/Drink With Scoop\r\nIngredients: Lion's Mane Mushroom Extract, (30% Polysaccharides).",
+        "price": "46.04",
+        "image_url": null,
+        "image": "lionsmane.webp"
+      }
+    },
+    {
+      "model": "products.product",
+      "pk": 22,
+      "fields": {
+        "category": 2,
+        "sku": "949EAEA3-A82",
+        "name": "Voyager Organic Raw Daily Hemp Treats - 30g",
+        "description": "Chewable raw dog treats made with 100% natural ingredients, Voyager�s Raw Hemp Treats for Dogs have been specially designed to help keep your pets healthy and happy. With one treat per day may help to improve joint movement, make coats glossier, reduce anxiety, aid sleep, reduce skin irritation and strengthen their immune system. Best of all, dogs love the taste of these all-natural treats! Use alongside Voyager�s Hemp Seed Oil for Pets range for optimal plant-based goodness. They're rich in protein, fibre and Omegas 3, 6 & 9.\r\n\r\nMade In The UK\r\n30g Food Supplement\r\nDaily Hemp Treats With Ashwagandha Extract\r\nOne A Day\r\n100% Natural Ingredients\r\nRich In Protein, Fibre & Omegas 3, 6 & 9\r\nDirections: One treat per day for small to medium dogs, Two treats per days for larger dogs. Not suitable for young puppies under 4 months. Use within 30 days of opening. Store in a cool, dry place. Keep out of reach of children.\r\n\r\nIngredients: Ground Chickpeas*, Oats*, Flaxseeds*, Water, Olive Oil , Hemp Seed Oil*, Dried Whole Eggs, Passion Flower Extract*, Ashwagandha Extract*, Apple Cider Vinegar. *Organic\r\n\r\nTHC content<0.2%",
+        "price": "14.74",
+        "image_url": null,
+        "image": "voyager.webp"
+      }
+    },
+    {
+      "model": "products.product",
+      "pk": 23,
+      "fields": {
+        "category": 2,
+        "sku": "0301DF64-95C",
+        "name": "The Shroom Shop Reishi Mushroom 90000mg Powder",
+        "description": "As mood enhancing super shrooms that rightly deserve their original name Lingzhi - meaning �divine mushroom�, Reishi mushrooms have proven to provide benefits such as immune boosting, stress and anxiety reducing. Throughout a wide array of cultures that have spanned across centuries, these mushrooms have been used as an answer to many different health benefits, the main ones being immune enhancement and stress defence. With 90,000mg of powder, you can experience the transformative effects of the Reishi Mushroom where it will last up to approximately 2 months. You can add a scoop to any food or drink (with Scoop Included) to add the convenience.\r\n\r\n90,000mg of Active Pure Reishi Mushroom Extract\r\n60 x 1500mg Servings\r\nImmune Boosting\r\nStress/Anxiety Relief\r\nEnhanced Mood & Wellbeing\r\nApprox. 2 Months Supply\r\nAdd To Any Food/Drink With Scoop\r\nIngredients: Reishi Mushroom Extract, (30% Polysaccharides).",
+        "price": "46.04",
+        "image_url": null,
+        "image": "reishi.webp"
+      }
+    },
+    {
+      "model": "products.product",
+      "pk": 24,
+      "fields": {
+        "category": 3,
+        "sku": "E9638E52-E51",
+        "name": "CBC+ 50mg CBC Muscle Balm - 50ml",
+        "description": "As the first brand that's proud to offer fully CBC (Cannabichromene) products, CBC+ offers innovation with their diverse range of products. With these health benefits in mind, CBC+ has designed the CBC Muscle Balm to help with reducing muscle and related pains through CBC's unique, powerful effects and it's deep tissue formula. Like all of CBC+ products, this has been subject to independent lab tests to guarantee it's safety, potency and purity before being made available.\r\n\r\n50mg CBC\r\n50ml Tub\r\nDeep Tissue Formula\r\nDerived from Organically Grown Hemp\r\nLab-tested for Safety, Purity, and Potency\r\nIngredients: Prunus Amygdalus Dulcis (Sweet Almond) Oil, Olea Europaea L (Olive) Oil, Helianthus annuus (Sunflower) Oil, Cera alba, (Arnica) Montana Extract, Capsicum Annuum Extract, Cinnamomum Camphora, CBC Extract\r\n\r\nWhat is CBC?\r\n\r\nAs one of the 'Big 6' of CBDs, CBC is often found in lower concentrates than CBD (Cannabidiol) and THC (Tetrahydrocannabinol) during hemp extraction and because of it's scarcity it is of higher value. Through various studies, it has been shown that CBC is a powerful, non-psychoactive cannabinoid in it's own right and has been linked towards helping to reduce acne, depressive symptoms, pain and improve cognitive functions among it's various benefits.\r\n\r\nTHC Content<0.2%",
+        "price": "21.04",
+        "image_url": null,
+        "image": "musclebalm_BBNsrv0.webp"
+      }
+    },
+    {
+      "model": "products.product",
+      "pk": 25,
+      "fields": {
+        "category": 3,
+        "sku": "DEA643A6-605",
+        "name": "CBC+ 50mg CBC Joint Balm - 50ml",
+        "description": "As the first brand that's proud to offer fully CBC (Cannabichromene) products, CBC+ offers innovation with their diverse range of products. With these health benefits in mind, CBC+ has designed the CBC Joint Balm to help with reducing the pain within joints through CBC's unique, powerful effects and it's deep tissue formula. Like all of CBC+ products, this has been subject to independent lab tests to guarantee it's safety, potency and purity before being made available.\r\n\r\n50mg CBC\r\n50ml Tub\r\nDeep Tissue Formula\r\nDerived from Organically Grown Hemp\r\nLab-tested for Safety, Purity, and Potency\r\nIngredients: Prunus Amygdalus Dulcis (Sweet Almond) Oil, Olea Europaea L (Olive) Oil, Helianthus annuus (Sunflower) Oil, Cera alba, Citral, (Arnica) Montana Extract, Leptospermum scoparium Extract, CBC Extract \r\n\r\nWhat is CBC?\r\n\r\nAs one of the 'Big 6' of CBDs, CBC is often found in lower concentrates than CBD (Cannabidiol) and THC (Tetrahydrocannabinol) during hemp extraction and because of it's scarcity it is of higher value. Through various studies, it has been shown that CBC is a powerful, non-psychoactive cannabinoid in it's own right and has been linked towards helping to reduce acne, depressive symptoms, pain and improve cognitive functions among it's various benefits.\r\n\r\nTHC Content<0.2%",
+        "price": "21.04",
+        "image_url": null,
+        "image": "jointbalm_4TBnJKC.webp"
+      }
+    },
+    {
+      "model": "products.product",
+      "pk": 26,
+      "fields": {
+        "category": 3,
+        "sku": "EB19A51F-389",
+        "name": "CBC+ 300mg CBC E-liquid 30ml",
+        "description": "CBC+ is the first brand that's proud to offer fully CBC (Cannabichromene) products within their product range. Therefore within this CBC+ E-liquid, all the calming and powerful effects and benefits of hemp derived CBC are available to you within this 30ml bottle with 300mg strength and all available in four tasty flavours. Like all CBC+ products, it has been subject to stringent third party lab tests to ensure it's purity, potency and safety before distribution.\r\n300mg CBC\r\n30ml Bottle\r\nExtracted From Organically Grown Hemp\r\nLab-tested for Safety, Purity, and Potency\r\nChildproof and Tamper Evident Cap\r\nRecyclable Bottle\r\nFlavours:\r\nBlue Raspberry\r\nStrawberry Kiwi\r\nBanana Split\r\nMenthol\r\nIngredients: Propylene Glycol, Vegetable Glycerine, Artificial & Natural Flavours, CBC Extract.\r\n\r\nWhat is CBD?\r\n\r\nCBC is one of the 'Big 6' of CBDs within medical research but it often found in lower concentrates than CBD (Cannabidiol) and THC (Tetrahydrocannabinol) during hemp extraction and therefore less studied than either. But because of that, it is of higher value and research on CBC has shown that it is a powerful, non-psychoactive cannabinoid in it's own right and has been linked towards helping to reduce acne, depressive symptoms, pain and improve cognitive functions among it's various benefits.\r\n\r\nTHC Content<0.2%",
+        "price": "24.95",
+        "image_url": null,
+        "image": "eliq300_gcgkXLi.webp"
+      }
+    },
+    {
+      "model": "products.product",
+      "pk": 27,
+      "fields": {
+        "category": 3,
+        "sku": "3715D488-31F",
+        "name": "CBC+ 150mg CBC E-liquid 30ml",
+        "description": "CBC+ is the first brand that's proud to offer fully CBC (Cannabichromene) products within their product range. Therefore within this CBC+ E-liquid, all the calming and powerful effects and benefits of hemp derived CBC are available to you within this 30ml bottle with 150mg strength and all available in four tasty flavours. Like all CBC+ products, it has been subject to stringent third party lab tests to ensure it's purity, potency and safety before distribution.\r\n150mg CBC\r\n30ml Bottle\r\nExtracted From Organically Grown Hemp\r\nLab-tested for Safety, Purity, and Potency\r\nChildproof and Tamper Evident Cap\r\nRecyclable Bottle\r\nFlavours:\r\nBlue Raspberry\r\nStrawberry Kiwi\r\nBanana Split\r\nMenthol\r\nIngredients: Propylene Glycol, Vegetable Glycerine, Artificial & Natural Flavours, CBC Extract.\r\n\r\nWhat is CBD?\r\n\r\nCBC is one of the 'Big 6' of CBDs within medical research but it often found in lower concentrates than CBD (Cannabidiol) and THC (Tetrahydrocannabinol) during hemp extraction and therefore less studied than either. But because of that, it is of higher value and research on CBC has shown that it is a powerful, non-psychoactive cannabinoid in it's own right and has been linked towards helping to reduce acne, depressive symptoms, pain and improve cognitive functions among it's various benefits.\r\n\r\nTHC Content<0.2%",
+        "price": "15.13",
+        "image_url": null,
+        "image": "eliq150_sujuKQX.webp"
+      }
+    },
+    {
+      "model": "products.product",
+      "pk": 28,
+      "fields": {
+        "category": 4,
+        "sku": "A6384B2C-200",
+        "name": "Plant Of Life 3% CBD 0.5% CBG Cannathol Scars Skin Cream - 40g",
+        "description": "Destined to alleviate the effects of injured skin, Plant of Line presents from their popular CBD skin care line Cannathol Scars Cream. With a revolutionary formula that includes 3% CBD and 0.5% CBG among its ingredients, its main purpose consists of intensive care and repair of the skin with dermatological deterioration derived from different treatments: peeling, tattoos, laser, etc. It helps to nourish and regenerate in depth, providing the skin with elasticity, softness and extra long-lasting hydration after application.\r\n\r\n3% CBD\r\n0.5% CBG\r\nVegan Friendly\r\nDecreases Risk of Bacterial Growth\r\nThe long list of active elements includes:\r\nAlmonds Oil\r\nShea Butter\r\nAllantoin\r\nVitamin E\r\nBisabolol\r\nCannabidiol (CBD) & Cannabigerol (CBG)\r\nHow to Use: Apply a small amount on the clean and dry treated area and massage gently until completely absorbed. Repeat the application as many times as necessary. From 3 years. Keep out of the reach of children. Do not apply to open wounds. Avoid contact with eyes and mucous membranes.\r\n\r\nTHC Content<0.2%",
+        "price": "18.29",
+        "image_url": null,
+        "image": "scars_QgKB11a.webp"
+      }
+    },
+    {
+      "model": "products.product",
+      "pk": 29,
+      "fields": {
+        "category": 4,
+        "sku": "688AB1BE-437",
+        "name": "Realest CBD 1000mg CBG Isolate",
+        "description": "99%+ pure CBG isolate from Realest CBD. Due to its guaranteed purity and consistency, this isolate is perfect for those who are looking to create their own CBG products. Realest CBG isolate is naturally Co2 extracted, vegan friendly and organic.\r\n\r\n- 99%+ Pure CBG Isolate\r\n\r\n- Odourless and flavourless\r\n\r\n- Organic and vegan friendly\r\n\r\n- Free from harmful chemicals\r\n\r\n- Naturally extracted\r\n\r\nIngredients: Cannabigerol Isolate (CBG)\r\n(THC content<0.2%)",
+        "price": "38.37",
+        "image_url": null,
+        "image": "realestisolate_nKp2lcs.webp"
+      }
+    },
+    {
+      "model": "products.product",
+      "pk": 30,
+      "fields": {
+        "category": 5,
+        "sku": "8EB8DDAE-796",
+        "name": "Feel Supreme 24000mg Himalayan Shilajit Capsules - 60 Caps",
+        "description": "As the result of a centuries long process of decomposing organic plant matter and minerals, Himalayan Shilajit offers benefits are well worth the wait. Shilajit has been a common feature of Ayurvedic medicine for years. It is extremely rich in fulvic acid and humid acid. Fulvic acid has many proven benefits such as improving gut health and keeping your skin healthy. Himalayan Shilajit is also extremely rich in trace minerals such as magnesium, zinc and potassium to name just a few. Benefits of these minerals include; anti-ageing, heart health, reducing stress, depression and anxiety, improving stamina and performance as well as support for your bones and joints.\r\n\r\nMade In The UK\r\n24000mg Himalayan Shilajit\r\n60 x 400mg Capsules\r\nRich In Fulvic Acid & Trace Materials\r\nAnti-Inflammatory\r\nAnti-Oxidant\r\nAnti-Ageing\r\nPrecautions: Don�t take shilajit if you have sickle cell anemia, hemochromatosis (too much iron in your blood), or thalassemia. It�s possible to be allergic to this supplement. Stop taking shilajit if you develop rash, increased heart rate, or dizziness. Do not consume if taking iron supplements.\r\n\r\nDosage: 1 capsule daily\r\n\r\nIngredients: Himalayan Shilajit, Rice Flour, HPMC Vegan Capsule",
+        "price": "33.28",
+        "image_url": null,
+        "image": "himshilajit_3yKYNIX.webp"
+      }
+    }
+  ]
