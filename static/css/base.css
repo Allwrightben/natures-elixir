@@ -55,8 +55,8 @@ body {
 }
 
 .btn-green {
-    background: rgba(86, 185, 158, 1);
-    color: ivory ;
+    background: rgba(86, 185, 158, 1) !important;
+    color: ivory !important;
 }
 
 .nav-link:hover,
