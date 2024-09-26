@@ -20,7 +20,7 @@ def add_to_bag(request, item_id):
         messages.success(request, "Updated the quantity of the item in your bag!")
     else:
         bag[item_id] = quantity
-        messages.success(request, "Added the item to your bag!")
+        messages.success(request, "Added the item to your bag!", extra_tags='bag_success')
 
     request.session['bag'] = bag
     return redirect(redirect_url)
