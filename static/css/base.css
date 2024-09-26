@@ -136,7 +136,7 @@ a.category-badge > span.badge:hover {
 
 /* ------------------------------- bootstrap toasts */
 
-.message-container {
+#message-container {
     position: fixed;
     top: 75px;
     right: 15px;
