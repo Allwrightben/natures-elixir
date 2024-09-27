@@ -34,7 +34,6 @@ ALLOWED_HOSTS = [
     'natures-elixir.herokuapp.com'
 ]
 
-
 # Application definition
 
 INSTALLED_APPS = [
