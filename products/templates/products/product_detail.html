@@ -9,6 +9,10 @@
     </div>
 {% endblock %}
 
+{% block header_class %}
+    header-colored
+{% endblock %}
+
 {% block content %}
     <div class="overlay"></div>
     <div class="container-fluid">
@@ -83,7 +87,7 @@
                     </form>                    
                 </div>
                 <!-- Display thumbs up/down and voting buttons -->
-                <div class="d-flex justify-content-between"> <!-- Updated class -->
+                <div class="d-flex justify-content-between mb-5"> <!-- Updated class -->
                     <!-- Thumbs Up Button -->
                     <form method="POST" action="{% url 'product-vote' product.id %}">
                         {% csrf_token %}
