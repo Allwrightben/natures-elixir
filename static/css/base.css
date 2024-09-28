@@ -59,6 +59,12 @@ body {
     color: ivory !important;
 }
 
+button.btn-green:hover {
+    background: ivory !important;
+    color: rgba(86, 185, 158, 1) !important;
+    border: 1px solid rgba(86, 185, 158, 1) !important;
+}
+
 .nav-link:hover,
 .nav-link:active,
 .nav-link:focus {
@@ -70,7 +76,6 @@ body {
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
-.btn-green:hover,
 .btn-green:active,
 .btn-green:focus {
     background: ivory;
@@ -154,7 +159,7 @@ a.category-badge > span.badge:hover {
 .welcome-message {
     position: fixed;
     left: 17px;
-    top: 102px;
+    top: 120px;
     transform: translateY(-50%);
     z-index: 1000;
 }

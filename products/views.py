@@ -1,12 +1,12 @@
 from django.shortcuts import render, get_object_or_404, redirect, reverse
-from .models import Product, Vote
+from .models import Product, Category, Vote
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 
-from .models import Product, Category
 from .forms import ProductForm
+
 
 def all_products(request):
     """ A view to show all products, including sorting and search queries """
@@ -31,7 +31,7 @@ def all_products(request):
                 if direction == 'desc':
                     sortkey = f'-{sortkey}'
             products = products.order_by(sortkey)
-            
+
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
             products = products.filter(category__name__in=categories)
@@ -42,7 +42,7 @@ def all_products(request):
             if not query:
                 messages.error(request, "You didn't enter any search criteria!")
                 return redirect(reverse('products'))
-            
+
             queries = Q(name__icontains=query) | Q(description__icontains=query)
             products = products.filter(queries)
 
@@ -69,10 +69,11 @@ def product_detail(request, product_id):
 
     return render(request, 'products/product_detail.html', context)
 
+
 def product_vote(request, product_id):
     # Get the product first
     product = get_object_or_404(Product, id=product_id)
-    
+
     if request.method == 'POST' and request.user.is_authenticated:
         vote_type = request.POST.get('vote_type')
         product = get_object_or_404(Product, id=product_id)
@@ -91,11 +92,11 @@ def product_vote(request, product_id):
             # Create a new vote
             Vote.objects.create(product=product, user=request.user, vote=vote_value)
 
-        return redirect(reverse('product_detail', args=[product.id]))  # Redirect to the product list or the specific product page
+        return redirect(reverse('product_detail', args=[product.id]))
 
     # If the user is not authenticated, show a message
     messages.error(request, "You need to be logged in to rate this product.")
-    return redirect(reverse('product_detail', args=[product.id]))  # Redirect if not authenticated or not a POST request
+    return redirect(reverse('product_detail', args=[product.id]))
 
 def product_detail(request, product_id):
     """ A view to show individual product details """
@@ -107,6 +108,7 @@ def product_detail(request, product_id):
     }
 
     return render(request, 'products/product_detail.html', context)
+
 
 @login_required
 def add_product(request):
@@ -125,13 +127,14 @@ def add_product(request):
             messages.error(request, 'Failed to add product. Please ensure the form is valid.')
     else:
         form = ProductForm()
-        
+
     template = 'products/add_product.html'
     context = {
         'form': form,
     }
 
     return render(request, template, context)
+
 
 @login_required
 def edit_product(request, product_id):
@@ -160,6 +163,7 @@ def edit_product(request, product_id):
     }
 
     return render(request, template, context)
+
 
 @login_required
 def delete_product(request, product_id):

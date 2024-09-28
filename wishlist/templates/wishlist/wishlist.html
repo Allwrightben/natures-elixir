@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% load static %}
+{% load bag_tools %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block header_class %}
+    header-colored
+{% endblock %}
+
+{% block content %}
+    <div class="overlay"></div>
+    <div class="container mb-2 text-black">
+        <div class="row">
+            <div class="col">
+                <hr>
+                <h2 class="logo-font mb-4 text-uppercase">My Wishlist</h2>
+                <hr>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                {% if items %}
+    <div class="table-responsive rounded">
+        <table class="table table-sm table-borderless">
+            <thead class="text-black">
+                <tr>
+                    <th scope="col">Product Info</th>
+                    <th scope="col"></th>
+                    <th scope="col">Move to bag</th>
+                </tr>
+            </thead>
+
+            {% for item in items %}
+                <tr>
+                    <td class="p-3 w-25">
+                        {% if item.product.image %}
+                            <img class="img-fluid rounded" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
+                        {% else %}
+                            <img class="img-fluid rounded" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}">
+                        {% endif %}
+                    </td>
+                    <td>
+                        <p class="my-0"><strong>{{ item.product.name }}</strong></p>
+                        <p class="my-0 small text-muted">SKU: {{ item.product.sku|upper }}</p>
+                    </td>
+                    <td>
+                        <form class="form add-form" method="POST" action="{% url 'wishlist:move_to_bag' item.product.id %}">
+                            {% csrf_token %}
+                            <button type="submit" class="btn btn-green">Move to Bag</button>
+                        </form>
+                        <form class="form remove-form" method="POST" action="{% url 'wishlist:remove_from_wishlist' item.product.id %}">
+                            {% csrf_token %}
+                            <button type="submit" class="btn text-danger">Remove from Wishlist</button>
+                        </form>
+                    </td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+{% else %}
+    <p class="lead mb-5">Your wishlist is empty.</p>
+    <a href="{% url 'products' %}" class="btn btn-green btn-lg">
+        <span class="icon">
+            <i class="fas fa-chevron-left"></i>
+        </span>
+        <span class="text-uppercase">Keep Shopping</span>
+    </a>
+{% endif %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
