@@ -68,7 +68,9 @@ def remove_from_wishlist(request, product_id):
         # Find the item in the wishlist and remove it
         item = WishlistItem.objects.get(wishlist=wishlist, product=product)
         item.delete()
-        messages.success(request, f"{product.name} has been removed from your wishlist.")
+        messages.success(
+            request, f"{product.name} has been removed from your wishlist."
+        )
     except WishlistItem.DoesNotExist:
         messages.error(request, f"{product.name} is not in your wishlist.")
 

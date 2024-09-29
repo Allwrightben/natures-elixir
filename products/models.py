@@ -2,6 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 import uuid
 
+
 class Category(models.Model):
     class Meta:
         verbose_name_plural = 'Categories'
@@ -17,8 +18,14 @@ class Category(models.Model):
 
 
 class Product(models.Model):
-    category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
-    sku = models.CharField(max_length=254, null=True, blank=True, unique=True)  # Ensure SKU is unique
+    category = models.ForeignKey(
+        'Category',
+        null=True,
+        blank=True,
+        on_delete=models.SET_NULL
+    )
+    # Ensure SKU is unique
+    sku = models.CharField(max_length=254, null=True, blank=True, unique=True)
     name = models.CharField(max_length=254)
     description = models.TextField()
     price = models.DecimalField(max_digits=6, decimal_places=2)
@@ -33,7 +40,7 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
-    
+
     # Method to count thumbs up votes
     def thumbs_up_count(self):
         return self.votes.filter(vote=Vote.THUMBS_UP).count()
@@ -51,12 +58,20 @@ class Vote(models.Model):
         (THUMBS_DOWN, 'Thumbs Down'),
     ]
 
-    product = models.ForeignKey(Product, related_name='votes', on_delete=models.CASCADE)
-    user = models.ForeignKey(User, related_name='votes', on_delete=models.CASCADE)
+    product = models.ForeignKey(
+        Product, related_name='votes', on_delete=models.CASCADE
+    )
+    user = models.ForeignKey(
+        User, related_name='votes', on_delete=models.CASCADE
+    )
     vote = models.SmallIntegerField(choices=VOTE_CHOICES)
 
+    # Ensure one vote per product per user
     class Meta:
-        unique_together = ('product', 'user')  # Ensure one vote per product per user
+        unique_together = ('product', 'user')
 
     def __str__(self):
-        return f"{self.user.username} - {self.get_vote_display()} on {self.product.name}"
+        return (
+            f"{self.user.username} - {self.get_vote_display()} "
+            f"on {self.product.name}"
+        )

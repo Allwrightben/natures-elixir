@@ -1,11 +1,12 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
+from django.shortcuts import (
+    render, redirect, reverse, get_object_or_404, HttpResponse
+)
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
 
 from django.core.mail import send_mail
 from django.template.loader import render_to_string
-from django.conf import settings
 
 from .forms import OrderForm
 from .models import Order, OrderLineItem
@@ -16,6 +17,7 @@ from bag.contexts import bag_contents
 
 import stripe
 import json
+
 
 @require_POST
 def cache_checkout_data(request):
@@ -32,6 +34,7 @@ def cache_checkout_data(request):
         messages.error(request, 'Sorry, your payment cannot be \
             processed right now. Please try again later.')
         return HttpResponse(content=e, status=400)
+
 
 def checkout(request):
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
@@ -70,7 +73,7 @@ def checkout(request):
                         order_line_item.save()
                 except Product.DoesNotExist:
                     messages.error(request, (
-                        "One of the products in your bag wasn't found in our database. "
+                        "Products in your bag not found in our database."
                         "Please call us for assistance!")
                     )
                     order.delete()
@@ -81,14 +84,16 @@ def checkout(request):
             # Send the confirmation email
             _send_confirmation_email(order)
 
-            return redirect(reverse('checkout_success', args=[order.order_number]))
+            return redirect(
+                reverse('checkout_success', args=[order.order_number])
+            )
         else:
             messages.error(request, 'There was an error with your form. \
                 Please double check your information.')
     else:
         bag = request.session.get('bag', {})
         if not bag:
-            messages.error(request, "There's nothing in your bag at the moment")
+            messages.error(request, "Nothing in your bag at the moment")
             return redirect(reverse('products'))
 
         current_bag = bag_contents(request)
@@ -100,7 +105,7 @@ def checkout(request):
             currency=settings.STRIPE_CURRENCY,
         )
 
-        # Attempt to prefill the form with any info the user maintains in their profile
+        # Prefill the form with any info the user maintains in their profile
         if request.user.is_authenticated:
             try:
                 profile = UserProfile.objects.get(user=request.user)
@@ -176,13 +181,14 @@ def checkout_success(request, order_number):
 
     return render(request, template, context)
 
+
 def _send_confirmation_email(order):
     """Send the user a confirmation email"""
     cust_email = order.email
     subject = render_to_string(
         'checkout/confirmation_emails/confirmation_email_subject.txt',
         {'order': order})
-    
+
     # Format the prices to two decimal places
     order_total = "{:.2f}".format(order.order_total)
     delivery_cost = "{:.2f}".format(order.delivery_cost)
