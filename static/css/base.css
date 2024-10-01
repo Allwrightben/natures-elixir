@@ -5,7 +5,7 @@ html {
 body {
     background: url('/media/mainimage.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: calc(100vh - 164px);
+    height: 100vh;
     background-color: ivory;
     font-family: "Mukta", sans-serif;
 }
@@ -59,7 +59,7 @@ body {
     color: ivory !important;
 }
 
-button.btn-green:hover {
+.btn-green:hover {
     background: ivory !important;
     color: rgba(86, 185, 158, 1) !important;
     border: 1px solid rgba(86, 185, 158, 1) !important;
@@ -113,6 +113,12 @@ button.btn-green:hover {
 a.category-badge > span.badge:hover {
     background: rgba(86, 185, 158, 1) !important;
     color: ivory !important;
+}
+
+.card:hover {
+    transform: scale(1.06);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .btt-button {
@@ -227,6 +233,33 @@ a.category-badge > span.badge:hover {
     background-color: #dc3545;
     border-color: #dc3545;
     border-radius: 0;
+}
+
+#mc_embed_signup {
+    background: rgba(86, 185, 158, 1);
+    padding: 0;
+}
+
+footer {
+    background-color: rgba(86, 185, 158, 1);
+    color: ivory;
+    padding: 10px 0;
+    bottom: 0%;
+    width: 100%;
+    margin-top: 2rem;
+    position: static;
+}
+
+footer .page-header h2 {
+    color: ivory;
+}
+
+footer a {
+    color: #ffcc00;
+}
+
+footer a:hover {
+    color: ivory;
 }
 
 /* -------------------------------- Media Queries */

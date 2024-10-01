@@ -15,6 +15,8 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Mukta:wght@200;300;400;500;600;700;800&display=swap">
         <link rel="stylesheet" href="{% static 'css/base.css' %}">
         <link rel="icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
+        <!-- mailchimp -->
+        <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
     {% endblock %}
 
     {% block extra_css %}
@@ -29,7 +31,7 @@
         <script src="https://js.stripe.com/v3/"></script>
     {% endblock %}
 
-    <title>Natures Elixir</title>
+    <title>Natures Elixir | Specialists in Hemp Products</title>
 </head>
 <body>
     <header class="container-fluid fixed-top {% block header_class %}{% endblock %}">
@@ -127,6 +129,61 @@
     {% block content %}
     {% endblock %}
 
+    <!-- Footer -->
+    <footer class="container-wrapper">
+        <div class="container quotes-container content-container">
+            <section class="footer">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <h3>Social</h3>
+                        <p>Keep up to date with all our latest offers</p>
+                        <a href="https://www.facebook.com/profile.php?id=61566859823022" target="_blank"><i
+                                class="fab fa-facebook-square"></i> Follow us on Facebook!</a>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div id="mc_embed_shell">
+                            <div id="mc_embed_signup">
+                                <form
+                                    action="https://herokuapp.us11.list-manage.com/subscribe/post?u=8ef9fb2cb055b7edbdf8ccbdf&amp;id=18638b468e&amp;f_id=00de12e1f0"
+                                    method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+                                    class="validate p-0 m-0" target="_blank">
+                                    <div id="mc_embed_signup_scroll p-0">
+                                        <h3>Subscribe!</h3>
+                                        <p>Get exclusive offers and discount codes by subscribing to our monthly newsletter</p>
+                                        <div class="mc-field-group"><label for="mce-EMAIL">Email Address <span
+                                                    class="asterisk">*</span></label><input type="email" name="EMAIL"
+                                                class="required email" id="mce-EMAIL" required="" value=""></div>
+                                        <div id="mce-responses" class="clear foot">
+                                            <div class="response" id="mce-error-response" style="display: none;"></div>
+                                            <div class="response" id="mce-success-response" style="display: none;">
+                                            </div>
+                                        </div>
+                                        <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                                            /* real people should not fill this in and expect good things - do not
+                                            remove this or risk form bot signups */
+                                            <input type="text" name="b_8ef9fb2cb055b7edbdf8ccbdf_18638b468e"
+                                                tabindex="-1" value="">
+                                        </div>
+                                        <div class="optionalParent">
+                                            <div class="clear foot">
+                                                <input type="submit" name="subscribe" id="mc-embedded-subscribe"
+                                                    class="button" value="Subscribe">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <a href="https://www.termsfeed.com/live/79ff5fd8-f041-4253-b5d0-57c78a298463" target="_blank">Our Privacy policy</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </footer>
+    <!-- /footer -->
+
     {% block postloadjs %}
     <script type="text/javascript">
         $('.toast').toast('show');
@@ -147,6 +204,28 @@
             }
         });
     </script>
+    <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+    <script type="text/javascript">
+        (function ($) {
+            window.fnames = new Array();
+            window.ftypes = new Array();
+            fnames[0] = 'EMAIL';
+            ftypes[0] = 'email';
+            fnames[1] = 'FNAME';
+            ftypes[1] = 'text';
+            fnames[2] = 'LNAME';
+            ftypes[2] = 'text';
+            fnames[3] = 'ADDRESS';
+            ftypes[3] = 'address';
+            fnames[4] = 'PHONE';
+            ftypes[4] = 'phone';
+            fnames[5] = 'BIRTHDAY';
+            ftypes[5] = 'birthday';
+            fnames[6] = 'COMPANY';
+            ftypes[6] = 'text';
+        }(jQuery));
+    var $mcj = jQuery.noConflict(true);
+</script>
     {% endblock %}
 
 </body>

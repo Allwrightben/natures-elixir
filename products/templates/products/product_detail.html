@@ -74,28 +74,36 @@
                             </div>
 
                             <div class="col-12">
-                                <a href="{% url 'products' %}" class="btn btn-green border-green mt-5">
+                                <a href="{% url 'products' %}" class="btn btn-green">
                                     <span class="icon">
                                         <i class="fas fa-chevron-left"></i>
                                     </span>
                                     <span class="text-uppercase">Keep Shopping</span>
                                 </a>
-                                <input type="submit" class="btn btn-green border-green text-uppercase mt-5" value="Add to Bag">
+
+                                <button type="submit" class="btn btn-green text-uppercase">                                    
+                                    <span>Add to bag</span>
+                                    <i class="fas fa-chevron-right ml-2"></i>
+                                </button>
+                                
                             </div>
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
                         </div>
                     </form>
                     <!-- Add to Wishlist Button -->
-                    <div class="col-12">
+                    <div class="col-12 mt-3 ml-5">
                         <form class="form" action="{% url 'wishlist:add_to_wishlist' product.id %}" method="POST">
                             {% csrf_token %}
-                            <input type="submit" class="btn btn-green border-green text-uppercase mt-5" value="Add to Wishlist">
+                            <button type="submit" class="btn btn-green text-uppercase">
+                                <i class="fas fa-heart mr-2"></i>
+                                <span>Add to Wishlist</span>
+                            </button>
                         </form>
-                    </div>                 
+                    </div>                
                 </div>
                 
                 <!-- Display thumbs up/down and voting buttons -->
-                <div class="d-flex justify-content-between mb-5"> <!-- Updated class -->
+                <div class="d-flex justify-content-between mb-5">
                     <!-- Thumbs Up Button -->
                     <form method="POST" action="{% url 'product-vote' product.id %}">
                         {% csrf_token %}
