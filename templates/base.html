@@ -33,7 +33,7 @@
 
     <title>Natures Elixir | Specialists in Hemp Products</title>
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
     <header class="container-fluid fixed-top {% block header_class %}{% endblock %}">
         <div id="topnav" class="row pt-lg-2 d-none d-lg-flex">
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
@@ -126,8 +126,12 @@
     {% block page_header %}
     {% endblock %}
 
-    {% block content %}
-    {% endblock %}
+    <div class="content-wrapper">
+        <div class="container">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="container-wrapper">

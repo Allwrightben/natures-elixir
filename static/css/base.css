@@ -10,6 +10,16 @@ body {
     font-family: "Mukta", sans-serif;
 }
 
+.content-wrapper {
+    flex-grow: 1;
+}
+
+.home-content {
+    min-height: calc(100vh - 208px);
+    display: flex;
+    align-items: center;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
@@ -246,7 +256,7 @@ footer {
     padding: 10px 0;
     bottom: 0%;
     width: 100%;
-    margin-top: 2rem;
+    margin-top: auto;
     position: static;
 }
 
@@ -263,6 +273,12 @@ footer a:hover {
 }
 
 /* -------------------------------- Media Queries */
+
+@media (max-width: 768px) {
+    .home-content {
+        padding-top: 100px;
+    }
+}
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
