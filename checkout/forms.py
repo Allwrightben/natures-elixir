@@ -31,10 +31,12 @@ class OrderForm(forms.ModelForm):
 
         self.fields['full_name'].widget.attrs['autofocus'] = True
         for field in self.fields:
-            placeholder = f"{placeholders[field]}{' *' if self.fields[field].required else ''}"
+            placeholder = (
+                f"{placeholders[field]}"
+                f"{' *' if self.fields[field].required else ''}"
+            )
             self.fields[field].widget.attrs['placeholder'] = placeholder
             self.fields[field].widget.attrs['class'] = 'stripe-style-input'
             self.fields[field].label = False
 
-        # Set 'United Kingdom' as a default value for the country and make it readonly
         self.fields['country'].initial = 'UK'

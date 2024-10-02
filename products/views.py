@@ -40,10 +40,14 @@ def all_products(request):
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
-                messages.error(request, "You didn't enter any search criteria!")
+                messages.error(
+                    request, "You didn't enter any search criteria!"
+                )
                 return redirect(reverse('products'))
 
-            queries = Q(name__icontains=query) | Q(description__icontains=query)
+            queries = Q(name__icontains=query) | Q(
+                description__icontains=query
+            )
             products = products.filter(queries)
 
     current_sorting = f'{sort}_{direction}'
@@ -71,7 +75,13 @@ def product_detail(request, product_id):
 
 
 def product_vote(request, product_id):
-    # Get the product first
+    """
+    View function to handle product voting.
+
+    Handles POST requests to vote for or against a product.
+    Updates or creates a vote based on the user's input.
+    Redirects to the product detail page after voting.
+    """
     product = get_object_or_404(Product, id=product_id)
 
     if request.method == 'POST' and request.user.is_authenticated:
@@ -82,7 +92,10 @@ def product_vote(request, product_id):
         vote_value = 1 if vote_type == 'up' else -1
 
         # Check if the user has already voted for this product
-        existing_vote = Vote.objects.filter(product=product, user=request.user).first()
+        existing_vote = (
+            Vote.objects.filter(product=product, user=request.user)
+            .first()
+        )
 
         if existing_vote:
             # Update the existing vote
@@ -90,29 +103,29 @@ def product_vote(request, product_id):
             existing_vote.save()
         else:
             # Create a new vote
-            Vote.objects.create(product=product, user=request.user, vote=vote_value)
+            Vote.objects.create(
+                product=product,
+                user=request.user,
+                vote=vote_value
+            )
 
         return redirect(reverse('product_detail', args=[product.id]))
 
     # If the user is not authenticated, show a message
-    messages.error(request, "You need to be logged in to rate this product.")
+    messages.info(request, "You need to be logged in to rate this product.")
     return redirect(reverse('product_detail', args=[product.id]))
-
-def product_detail(request, product_id):
-    """ A view to show individual product details """
-
-    product = get_object_or_404(Product, pk=product_id)
-
-    context = {
-        'product': product,
-    }
-
-    return render(request, 'products/product_detail.html', context)
 
 
 @login_required
 def add_product(request):
-    """ Add a product to the store """
+    """
+    View function to add a new product to the store.
+
+    Only accessible to superusers.
+    Handles form submission and redirects
+    to the product detail page upon success.
+    Displays error message if form validation fails.
+    """
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
@@ -124,7 +137,10 @@ def add_product(request):
             messages.success(request, 'Successfully added product!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Failed to add product. Please ensure the form is valid.')
+            messages.error(
+                request,
+                'Failed to add product. Please ensure the form is valid.'
+                )
     else:
         form = ProductForm()
 
@@ -138,7 +154,14 @@ def add_product(request):
 
 @login_required
 def edit_product(request, product_id):
-    """ Edit a product in the store """
+    """
+    View function to edit an existing product in the store.
+
+    Only accessible to superusers.
+    Handles form submission and redirects
+    to the product detail page upon success.
+    Displays error message if form validation fails.
+    """
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
@@ -151,7 +174,10 @@ def edit_product(request, product_id):
             messages.success(request, 'Successfully updated product!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Failed to update product. Please ensure the form is valid.')
+            messages.error(
+                request,
+                'Failed to update product. Please ensure the form is valid.'
+                )
     else:
         form = ProductForm(instance=product)
         messages.info(request, f'You are editing {product.name}')
@@ -167,7 +193,12 @@ def edit_product(request, product_id):
 
 @login_required
 def delete_product(request, product_id):
-    """ Delete a product from the store """
+    """
+    View function to delete a product from the store.
+
+    Only accessible to superusers.
+    Deletes the product from the database and redirects to the products page.
+    """
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))

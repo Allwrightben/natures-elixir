@@ -25,7 +25,10 @@ class UserProfileForm(forms.ModelForm):
 
         self.fields['default_phone_number'].widget.attrs['autofocus'] = True
         for field in self.fields:
-            placeholder = f"{placeholders[field]}{' *' if self.fields[field].required else ''}"
+            placeholder = (
+                f"{placeholders[field]}"
+                f"{' *' if self.fields[field].required else ''}"
+            )
             self.fields[field].widget.attrs['placeholder'] = placeholder
             self.fields[field].widget.attrs['class'] = 'stripe-style-input'
             self.fields[field].label = False

@@ -1,6 +1,6 @@
 from django.contrib import admin
 from .models import Product, Category, Vote
-from django.db import models
+from django.db import models  # noqa
 
 
 class ProductAdmin(admin.ModelAdmin):
@@ -15,6 +15,7 @@ class ProductAdmin(admin.ModelAdmin):
     )
 
     ordering = ('sku',)
+
 
 class CategoryAdmin(admin.ModelAdmin):
     list_display = (
