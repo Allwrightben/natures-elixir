@@ -223,10 +223,7 @@ This feature requires more research time to implement, which is why it is not im
     + [W3C CSS validator](https://jigsaw.w3.org/css-validator/): was used to validate CSS code for the website.
     + [JShint](https://jshint.com/): was used to validate JS code for the website.
     + [PEP8](https://pep8.org/): was used to validate Python code for the website.
-    + [geonames](https://www.geonames.org/) was used to get the country and city names.
-    + [Multiple Video & Image Upload Plugin - jQuery Miv.js](https://www.jqueryscript.net/form/multi-video-image-upload.html) was used to upload multiple videos and images. **Note:** the plugin  is using special characters in css and js files that I am aware about!
     + [stripe](https://stripe.com/): was used to create the payment system.
-    + [birme.net](https://www.birme.net/): was used to crop and center unsplash images.
     + [Sitemap Generator](https://www.xml-sitemaps.com/) was used to create the sitemap.xml file.
     + [Privacy Policy Generator](https://www.privacypolicygenerator.info/) was used to create the privacy policy.
     + [Django-extensions](https://django-extensions.readthedocs.io/en/latest/) was used to create a Entity-Relationship Diagram.
