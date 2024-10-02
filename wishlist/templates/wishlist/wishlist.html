@@ -54,11 +54,11 @@
                     <td>
                         <form class="form add-form" method="POST" action="{% url 'wishlist:move_to_bag' item.product.id %}">
                             {% csrf_token %}
-                            <button type="submit" class="btn btn-green">Move to Bag</button>
+                            <button type="submit" class="btn btn-green">Add to Bag</button>
                         </form>
-                        <form class="form remove-form" method="POST" action="{% url 'wishlist:remove_from_wishlist' item.product.id %}">
+                        <form class="form remove-form mt-1" method="POST" action="{% url 'wishlist:remove_from_wishlist' item.product.id %}">
                             {% csrf_token %}
-                            <button type="submit" class="btn text-danger">Remove from Wishlist</button>
+                            <button type="submit" class="btn btn-danger small">Remove</button>
                         </form>
                     </td>
                 </tr>
