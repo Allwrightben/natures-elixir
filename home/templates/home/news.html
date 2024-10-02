@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block header_class %}
+header-transparent
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container mt-5">
+<hr>
+<h1>News</h1>
+<hr>
+<article class="mb-3">
+    <a href="https://www.health.harvard.edu/blog/cannabidiol-cbd-what-we-know-and-what-we-dont-2018082414476"
+        class="card h-100 text-decoration-none" target="_blank">
+        <div class="row g-0">
+            <div class="col-md-3">
+                <img src="/media/harvard-study.jpg" class="card-img-top img-fluid w-100 h-100 rounded-start"
+                    alt="News Image from Harvard of hemp leaf">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h3 class="card-title font-weight-bold text-green">Is cannabidiol (Hemp products) legal? - a Harvard study.
+                    </h3>
+                    <p class="card-text text-black">
+                        CBD is readily obtainable in most parts of the United States,
+                        though its exact legal status has been in flux. All 50 states
+                        have laws legalizing CBD with varying degrees of restriction.
+                        In December 2015, the FDA eased the regulatory requirements
+                        to allow researchers to conduct CBD trials. In 2018,
+                        the Farm Bill made hemp legal in the United States,
+                        making it virtually impossible to keep CBD illegal —
+                        that would be like making oranges legal, but keeping
+                        orange juice illegal. <strong>read the full article...</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </a>
+</article>
+
+<article class="mb-3"></article>
+<a href="https://www.health.harvard.edu/staying-healthy/cbd-products-are-everywhere-but-do-they-work"
+    class="card h-100 text-decoration-none" target="_blank">
+    <div class="row g-0">
+        <div class="col-md-3">
+            <img src="/media/harvard-but-do-they-work.jpg.crdownload"
+                class="card-img-top img-fluid w-100 h-100 rounded-start" alt="News Image from Harvard of hemp leaf">
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <h3 class="card-title font-weight-bold text-green">CBD products are everywhere. But do they work? - a Harvard
+                    study.</h3>
+                <p class="card-text text-black">
+                    By now, you've probably run into a product containing cannabidiol,
+                    also known as CBD. It is in everything from drinks and pet products
+                    to lotions and chewable gummies. Even major drugstore chains
+                    have announced they will start carrying CBD products in
+                    certain states. <strong>read the full article...</strong>
+                </p>
+            </div>
+        </div>
+    </div>
+</a>
+</article>
+</div>
+{% endblock %}

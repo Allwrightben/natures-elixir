@@ -2,13 +2,13 @@
     <ul class="navbar-nav w-auto mx-auto justify-content-center text-green nav-border">
         
         <li class="nav-item d-block d-lg-none">
-            <a class="logo-font font-weight-bold nav-link text-green mr-4" href="{% url 'home' %}" id="home-link"">
+            <a class="logo-font font-weight-bold nav-link text-green mr-4" href="{% url 'home' %}" id="home-link">
                 Home
             </a>
         </li>
 
         <li class="nav-item d-block d-lg-none">
-            <a class="logo-font font-weight-bold nav-link text-green mr-4" href="{% url 'wishlist:view_wishlist' %}" id="wishlist-link"">
+            <a class="logo-font font-weight-bold nav-link text-green mr-4" href="{% url 'wishlist:view_wishlist' %}" id="wishlist-link">
                 My Wishlist
             </a>
         </li>
@@ -51,6 +51,12 @@
         <li class="nav-item">
             <a class="logo-font font-weight-bold nav-link text-green mr-4" href="{% url 'contact' %}" id="contact-link">
                 Contact
+            </a>
+        </li>
+
+        <li class="nav-item"></li>
+            <a class="logo-font font-weight-bold nav-link text-green mr-4" href="{% url 'news' %}" id="news-link">
+                News
             </a>
         </li>
     </ul>
