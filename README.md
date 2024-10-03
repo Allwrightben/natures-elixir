@@ -227,3 +227,101 @@ This feature requires more research time to implement, which is why it is not im
     + [Sitemap Generator](https://www.xml-sitemaps.com/) was used to create the sitemap.xml file.
     + [Privacy Policy Generator](https://www.privacypolicygenerator.info/) was used to create the privacy policy.
     + [Django-extensions](https://django-extensions.readthedocs.io/en/latest/) was used to create a Entity-Relationship Diagram.
+---
+## Features
+
+
+Please refer to the [FEATURES.md](FEATURES.md) file for all test-related documentation.
+
+
+---
+## Design
+
+The design of the application is based on the client wanting a simple design with natural colours of ivory and green to match the business theme of hemp based products. The minimalistic approach was used to create something meaningful without moving out of the customer's focus. As this application is a multifunctional (provides full customer experience and business management) application and consists of many components, the decision to implement white spaces was made as it helps to create a more pleasant user experience. It also helps users, whether customers or personnel, to focus on the main content of the application.
+
+### Imagery
+
+- The main background image was taken [Unsplash](https://unsplash.com/).
+
+  ![Background](media/mainimage.jpg)
+
+- Images were downloaded from the websites listed in the **Credits section**. [Content and Images](#content-and-images)
+
+- The main part is allocated to using icons from the [font awesome](https://fontawesome.com/) website. Icons are essential for the user experience when it comes to multifunctional websites.
+
+## Wireframes
+
+[Natures Elixir Wireframes](documentation/wireframes.pdf)
+
+## Agile Methodology
+
+### GitHub Project Management
+
+
+[GitHub Project Management pdf](documentation/userstories.pdf)
+
+GitHub Project Management was used to manage the project. If it hadn't been for the GitHub project management, I wouldn't have been able to manage the development of the application. It helped me to prioritize the tasks and to keep track of my progress.
+
+Github projects: [Link to website](https://github.com/users/Allwrightben/projects/6/views/1)
+
+---
+
+## Information Architecture
+
+### Database
+
+* During the earliest stages of the project, the database was created using SQLite.
+* The database was then migrated to PostgreSQL.
+
+### Entity-Relationship Diagram
+
+![ERD](documentation/my_project_models.png)
+
+
+---
+## Testing
+
+Please refer to the [TESTING.md](TESTING.md) file for all test-related documentation.
+
+---
+
+## Deployment and Payment setup
+
+- The app was deployed to [Heroku](https://www.heroku.com/).
+- The database was deployed to [CI PostgreSQL](https://dbs.ci-dbs.net/).
+
+- The app can be reached by the [link](https://natures-elixir-64c04e0a2408.herokuapp.com/).
+
+
+Please refer to the [DEPLOYMENT.md](DEPLOYMENT.md) file for all deployment and payment-related documentation.
+
+---
+
+## Credits
+
+- [GitHub](https://github.com/) for giving the idea of the project's design.
+- [Django](https://www.djangoproject.com/) for the framework.
+- [Font awesome](https://fontawesome.com/): for the free access to icons.
+- [Heroku](https://www.heroku.com/): for providing a free hosting.
+- [jQuery](https://jquery.com/): for providing varieties of tools to make standard HTML code look appealing.
+- [jQuery UI](https://jqueryui.com/): for providing varieties of tools to make standard HTML code look appealing.
+- [Postgresql](https://www.postgresql.org/): for providing a free database.
+- [Stripe](https://stripe.com/): for providing a free payment gateway.
+- [fontawesome](https://fontawesome.com/): for providing free icons.
+- [googlefonts](https://fonts.google.com/): for providing free fonts.
+- [Responsive Viewer](https://chrome.google.com/webstore/detail/responsive-viewer/inmopeiepgfljkpkidclfgbgbmfcennb/related?hl=en): for providing a free platform to test website responsiveness
+- [GoFullPage](https://gofullpage.com/): for allowing to create free full web page screenshots;
+- [Favicon Generator. For real.](https://realfavicongenerator.net/): for providing a free platform to generate favicons.
+- [Sitemap Generator](https://www.xml-sitemaps.com/): for providing a free platform to generate sitemaps.
+- [Coolors](https://coolors.co/): for providing a free platform to generate your own palette.
+- [Elon Musk](https://twitter.com/elonmusk?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor): for providing a template for the twitter mock-up page;
+
+### Content and Images
+
+- [unsplash](https://unsplash.com/): for providing the free homepage image images.
+- [chrome developer tools](https://developer.chrome.com/extensions/devtools_inspector): for providing a free 
+- All product images came from Connie Higgins The owener of the business
+---
+## Acknowledgments
+
+- My Mentor Juliia has been incredible, always helpful, seems to know everything, makes it fun, a real inspiration.

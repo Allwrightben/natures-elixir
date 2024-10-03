@@ -1,3 +1,9 @@
+"""
+Views for handling the checkout process.
+
+This module includes functions to process the checkout,
+manage orders, and send confirmation emails to users.
+"""
 from django.shortcuts import (
     render, redirect, reverse, get_object_or_404, HttpResponse
 )

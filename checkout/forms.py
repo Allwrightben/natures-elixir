@@ -3,6 +3,13 @@ from .models import Order
 
 
 class OrderForm(forms.ModelForm):
+    """
+    A form for creating and updating order information.
+
+    This form allows users to input their details for an order,
+    including their name, contact information, and address.
+    It uses the Order model and includes placeholders and styling.
+    """
     class Meta:
         model = Order
         fields = (

@@ -4,6 +4,14 @@ import uuid
 
 
 class Category(models.Model):
+    """
+    Model representing a product category.
+
+    Attributes:
+        name (str): The name of the category.
+        friendly_name (str): An optional, more
+        human-friendly name for display purposes.
+    """
     class Meta:
         verbose_name_plural = 'Categories'
 
@@ -18,6 +26,18 @@ class Category(models.Model):
 
 
 class Product(models.Model):
+    """
+    Model representing a product.
+
+    Attributes:
+        category (Category): The category the product belongs to.
+        sku (str): Unique Stock Keeping Unit (SKU).
+        name (str): The name of the product.
+        description (str): A detailed description of the product.
+        price (Decimal): The price of the product.
+        image_url (str): An optional URL of the product image.
+        image (ImageField): An optional image file for the product.
+    """
     category = models.ForeignKey(
         'Category',
         null=True,
@@ -51,6 +71,15 @@ class Product(models.Model):
 
 
 class Vote(models.Model):
+    """
+    Model representing a vote on a product (either thumbs up or thumbs down).
+
+    Attributes:
+        product (Product): The product being voted on.
+        user (User): The user who cast the vote.
+        vote (int): The value of the vote
+        (1 for thumbs up, -1 for thumbs down).
+    """
     THUMBS_UP = 1
     THUMBS_DOWN = -1
     VOTE_CHOICES = [

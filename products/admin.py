@@ -4,6 +4,13 @@ from django.db import models  # noqa
 
 
 class ProductAdmin(admin.ModelAdmin):
+    """
+    Customizes the display of the Product model in the Django admin interface.
+
+    - Displays specific fields in the product list view, including SKU, name,
+    category, price, thumbs up and down counts, and image.
+    - Orders the products by SKU.
+    """
     list_display = (
         'sku',
         'name',
@@ -18,6 +25,11 @@ class ProductAdmin(admin.ModelAdmin):
 
 
 class CategoryAdmin(admin.ModelAdmin):
+    """
+    Customizes the display of the Category model in the Django admin interface.
+
+    - Displays the friendly name and the name of each category.
+    """
     list_display = (
         'friendly_name',
         'name',

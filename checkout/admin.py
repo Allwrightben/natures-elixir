@@ -3,11 +3,24 @@ from .models import Order, OrderLineItem
 
 
 class OrderLineItemAdminInline(admin.TabularInline):
+    """
+    Inline admin interface for order line items.
+
+    This class allows for the display and editing of order line items
+    associated with an order directly within the OrderAdmin view.
+    """
     model = OrderLineItem
     readonly_fields = ('lineitem_total',)
 
 
 class OrderAdmin(admin.ModelAdmin):
+    """
+    Admin interface for managing orders.
+
+    This class defines how orders are displayed and managed in the
+    Django admin panel. It includes read-only fields and inlines for
+    order line items.
+    """
     inlines = (OrderLineItemAdminInline,)
 
     readonly_fields = ('order_number', 'date',

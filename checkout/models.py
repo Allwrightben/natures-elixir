@@ -9,6 +9,28 @@ from profiles.models import UserProfile
 
 
 class Order(models.Model):
+    """
+    A model representing an order placed by a user.
+
+    Attributes:
+        order_number (str): A unique identifier for the order.
+        user_profile (UserProfile): The profile of the user who placed order.
+        full_name (str): The full name of the customer.
+        email (str): The customer's email address.
+        phone_number (str): The customer's phone number.
+        street_address1 (str): The primary street address for delivery.
+        street_address2 (str): An optional secondary street address.
+        town_or_city (str): The town or city for delivery.
+        county (str): The county for delivery (optional).
+        postcode (str): The postal code for delivery.
+        country (str): The country for delivery.
+        date (datetime): The date the order was placed.
+        delivery_cost (Decimal): The cost of delivery for the order.
+        order_total (Decimal): The total cost of the order excluding delivery.
+        grand_total (Decimal): The total cost of the order including delivery.
+        original_bag (str): A string representation of the original shopping
+        bag. stripe_pid (str): The payment identifier from Stripe.
+    """
     order_number = models.CharField(max_length=32, null=False, editable=False)
     user_profile = models.ForeignKey(
         UserProfile, on_delete=models.SET_NULL,
@@ -76,6 +98,15 @@ class Order(models.Model):
 
 
 class OrderLineItem(models.Model):
+    """
+    A model representing an item within an order.
+
+    Attributes:
+        order (Order): The order this line item belongs to.
+        product (Product): The product associated with this line item.
+        quantity (int): The quantity of the product ordered.
+        lineitem_total (Decimal): The total cost for this line item.
+    """
     order = models.ForeignKey(
         Order, null=False, blank=False, on_delete=models.CASCADE,
         related_name='lineitems')

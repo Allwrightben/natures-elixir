@@ -4,7 +4,24 @@ from .models import Wishlist
 
 @admin.register(Wishlist)
 class WishlistAdmin(admin.ModelAdmin):
-    """Admin for the Wishlist model."""
+    """
+    Admin interface for managing Wishlist instances.
+
+    This class customizes the admin interface for the Wishlist model,
+    allowing administrators to view, filter, and search through wishlists.
+
+    Attributes:
+        list_display: A tuple specifying fields to display in the list view.
+        list_filter: A tuple specifying fields to filter the results by.
+        search_fields: A tuple specifying fields to include in the search.
+        raw_id_fields: A tuple for fields that should
+        be displayed as a raw ID input.
+        readonly_fields: A tuple specifying fields are read-only in the form.
+
+    Methods:
+        product_count: Returns the number of products in the wishlist.
+        clear_products: Action to remove all products from selected wishlists.
+    """
     list_display = (
         'user',
         'created_at',
