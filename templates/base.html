@@ -2,6 +2,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
     {% block meta %}
@@ -23,28 +24,19 @@
     {% endblock %}
 
     {% block corecss %}
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Mukta:wght@200;300;400;500;600;700;800&display=swap">
-        <link rel="stylesheet" href="{% static 'css/base.css' %}">
-        <link rel="icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
-        <!-- mailchimp -->
-        <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
-    {% endblock %}
-
-    {% block extra_css %}
-    {% endblock %}
-
-    {% block corejs %}
-        <script src="https://kit.fontawesome.com/653351ba45.js" crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-        <!-- Stripe -->
-        <script src="https://js.stripe.com/v3/"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Mukta:wght@200;300;400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
+    <!-- mailchimp -->
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
     {% endblock %}
 
     <title>Natures Elixir | Specialists in Hemp Products</title>
 </head>
+
 <body class="d-flex flex-column min-vh-100">
     <header class="container-fluid fixed-top {% block header_class %}{% endblock %}">
         <div id="topnav" class="row pt-lg-2 d-none d-lg-flex">
@@ -56,7 +48,8 @@
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <form method="GET" action="{% url 'products' %}">
                     <div class="input-group w-100">
-                        <input class="form-control border border-green searchbar text-green mr-1" type="text" name="q" placeholder="Search our products...">
+                        <input class="form-control border border-green searchbar text-green mr-1" type="text" name="q"
+                            placeholder="Search our products...">
                         <div class="input-group-append">
                             <button class="form-control btn btn-green border border-green searchbar" type="submit">
                                 <span class="icon">
@@ -70,7 +63,8 @@
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                     <li class="list-inline-item dropdown nav-border">
-                        <a class="text-green nav-link" href="#" id="menu-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="text-green nav-link" href="#" id="menu-options" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
                             <div class="text-center">
                                 <div><i class="fas fa-user fa-lg"></i></div>
                                 <p class="my-0">My Account</p>
@@ -78,26 +72,27 @@
                         </a>
                         <div class="dropdown-menu border-green" aria-labelledby="menu-options">
                             {% if request.user.is_authenticated %}
-                                {% if request.user.is_superuser %}
-                                    <a href="{% url 'add_product' %}" class="dropdown-item text-green">Product Management</a>
-                                {% endif %}
-                                <a href="{% url 'profile' %}" class="dropdown-item text-green">My Profile</a>
-                                <a href="{% url 'account_logout' %}" class="dropdown-item text-green">Logout</a>
+                            {% if request.user.is_superuser %}
+                            <a href="{% url 'add_product' %}" class="dropdown-item text-green">Product Management</a>
+                            {% endif %}
+                            <a href="{% url 'profile' %}" class="dropdown-item text-green">My Profile</a>
+                            <a href="{% url 'account_logout' %}" class="dropdown-item text-green">Logout</a>
                             {% else %}
-                                <a href="{% url 'account_signup' %}" class="dropdown-item text-green">Register</a>
-                                <a href="{% url 'account_login' %}" class="dropdown-item text-green">Login</a>
+                            <a href="{% url 'account_signup' %}" class="dropdown-item text-green">Register</a>
+                            <a href="{% url 'account_login' %}" class="dropdown-item text-green">Login</a>
                             {% endif %}
                         </div>
                     </li>
                     <li class="list-inline-item nav-border">
-                        <a class="{% if grand_total %}text-green font-weight-bold{% else %}text-green{% endif %} nav-link" href="{% url 'view_bag' %}">
+                        <a class="{% if grand_total %}text-green font-weight-bold{% else %}text-green{% endif %} nav-link"
+                            href="{% url 'view_bag' %}">
                             <div class="text-center">
                                 <div><i class="fas fa-shopping-bag fa-lg"></i></div>
                                 <p class="my-0">
                                     {% if grand_total %}
-                                        £{{ grand_total|floatformat:2 }}
+                                    £{{ grand_total|floatformat:2 }}
                                     {% else %}
-                                        £0.00
+                                    £0.00
                                     {% endif %}
                                 </p>
                             </div>
@@ -108,7 +103,8 @@
         </div>
         <div class="row">
             <nav class="navbar navbar-expand-lg navbar-light w-100 mobile-nav-bg">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
+                    aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 {% include 'includes/mobile-top-header.html' %}
@@ -118,21 +114,21 @@
     </header>
 
     {% if messages %}
-        <div id="message-container">
-            {% for message in messages %}
-                {% with message.level as level %}
-                    {% if level == 40 %}
-                        {% include 'includes/toasts/toast_error.html' %}
-                    {% elif level == 30 %}
-                        {% include 'includes/toasts/toast_warning.html' %}
-                    {% elif level == 25 %}
-                        {% include 'includes/toasts/toast_success.html' %}
-                    {% else %}
-                        {% include 'includes/toasts/toast_info.html' %}
-                    {% endif %}
-                {% endwith %}
-            {% endfor %}
-        </div>
+    <div id="message-container">
+        {% for message in messages %}
+        {% with message.level as level %}
+        {% if level == 40 %}
+        {% include 'includes/toasts/toast_error.html' %}
+        {% elif level == 30 %}
+        {% include 'includes/toasts/toast_warning.html' %}
+        {% elif level == 25 %}
+        {% include 'includes/toasts/toast_success.html' %}
+        {% else %}
+        {% include 'includes/toasts/toast_info.html' %}
+        {% endif %}
+        {% endwith %}
+        {% endfor %}
+    </div>
     {% endif %}
 
     {% block page_header %}
@@ -142,7 +138,7 @@
         {% block content %}
         {% endblock %}
     </div>
-    
+
 
     <!-- Footer -->
     <footer class="container-wrapper">
@@ -164,7 +160,8 @@
                                     class="validate p-0 m-0" target="_blank">
                                     <div id="mc_embed_signup_scroll">
                                         <h3>Subscribe!</h3>
-                                        <p>Get exclusive offers and discount codes by subscribing to our monthly newsletter</p>
+                                        <p>Get exclusive offers and discount codes by subscribing to our monthly
+                                            newsletter</p>
                                         <div class="mc-field-group"><label for="mce-EMAIL">Email Address <span
                                                     class="asterisk">*</span></label><input type="email" name="EMAIL"
                                                 class="required email" id="mce-EMAIL" required="" value=""></div>
@@ -191,7 +188,8 @@
                         </div>
                     </div>
                     <div class="col-12">
-                        <a href="https://www.termsfeed.com/live/79ff5fd8-f041-4253-b5d0-57c78a298463" target="_blank">Our Privacy policy</a>
+                        <a href="https://www.termsfeed.com/live/79ff5fd8-f041-4253-b5d0-57c78a298463"
+                            target="_blank">Our Privacy policy</a>
                     </div>
                 </div>
             </section>
@@ -239,10 +237,22 @@
             fnames[6] = 'COMPANY';
             ftypes[6] = 'text';
         }(jQuery));
-    var $mcj = jQuery.noConflict(true);
-</script>
+        var $mcj = jQuery.noConflict(true);
+    </script>
     {% endblock %}
-
+    {% block corejs %}
+    <script src="https://kit.fontawesome.com/653351ba45.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <!-- Stripe -->
+    <script src="https://js.stripe.com/v3/"></script>
+    {% endblock %}
 </body>
 
 </html>
