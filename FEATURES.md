@@ -176,9 +176,13 @@ This page has the following features:
 - A form for name, contact details and address information
 - A card payment section
 - A button to adjust their bag items
-- A "complate order" button that will process their payment
+- A "complete order" button that will process their payment
 
-### Checkout page:
+### Purchase confirmation email:
+
+![Purchase confirmation email](documentation/features/)
+
+### Contact page:
 
 ![Contact page](documentation/features/contact.PNG)
 
