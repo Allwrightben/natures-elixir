@@ -184,6 +184,10 @@ Google is the most popular third-party registration service that is easy to impl
 
 I want to implement PayPal payment system in the future as many customers prefer it. I am also considering adding google pay and apple pay functionality to the existing stripe payment system as they are widely used due to their simplicity.
 
+#### Better responsiveness on tablet sized screens.
+
+I simply ran out of time, but this will be the first thing I fix in the comming weeks when time permits.
+
 #### Order cancellation
 
 This feature requires more research time to implement, which is why it is not implemented at this stage.

@@ -135,6 +135,11 @@ Checkout |                        |                  |      |             |
 *Solution:*
 I'm ashamed to say that it took me too long to figure out that the overlay I set for each page was covering some buttons because I had put the overlay class inside some of the containers instead of in its own div.
 
+2. After trying to improve the sites performance ranking with Lighthouse I moved the javascrip links to the bottom of the body and that seemed to improve a little but not much, I later noticed after final testing that the card payment element was no longer visible and the payment spinner was always on the screen.
+
+*Solution:*
+After some investigation I realised that it was because the javascript was loading after the elements so I moved it back and that fixed the problem.
+
 #### There were no unsolved bugs
 
 ## Compatibility

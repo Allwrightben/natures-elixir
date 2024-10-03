@@ -178,9 +178,13 @@ This page has the following features:
 - A button to adjust their bag items
 - A "complete order" button that will process their payment
 
+### Success page:
+
+![Success page](documentation/features/success.PNG)
+
 ### Purchase confirmation email:
 
-![Purchase confirmation email](documentation/features/)
+![Purchase confirmation email](documentation/features/conf_email.PNG)
 
 ### Contact page:
 
