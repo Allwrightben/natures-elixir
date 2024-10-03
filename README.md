@@ -167,6 +167,10 @@ Facebook is essential for the store to be able to reach customers. Facebook has 
 ---
 ## Future Development
 
+#### Customer loyalty program
+
+A customer loyalty program is something the client would like to include in the future. Customers will earn points for each purchase and with enough points they will get discounts on future puschases. Since it's not crucial to the new business this will be a future development.
+
 #### Customer chat
 
 Chat support would provide the customers with the best possible service.
