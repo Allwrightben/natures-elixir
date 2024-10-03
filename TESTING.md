@@ -174,24 +174,31 @@ Testing was conducted on the following browsers;
 ## Lighthouse Report
 
 ### Home Page
+75% best practices due mainly to mailchimp and strupe cookies, in a future developemnt I will try to omtimise this.
 
-![Lighthouse Report. Home Page](documentation/lighthouse_reports/mainpage.PNG)
+![Lighthouse Report. Home Page](documentation/lighthouse/home_lighthouse.PNG)
 
-### About Page
+### Products page
+Like above this need more work
 
-![Lighthouse Report. ABout Page](documentation/lighthouse_reports/about.PNG)
+![Lighthouse Report. Products Page](documentation/lighthouse/products_lighthouse.PNG)
 
-### login Page
+### Products page
 
-![Lighthouse Report. Login Page](documentation/lighthouse_reports/login.PNG)
+![Lighthouse Report. Contact Page](documentation/lighthouse/contact_lighthouse.PNG)
 
-### Make Booking Page
+### News page
 
-![Lighthouse Report. Bookings Page](documentation/lighthouse_reports/bookings.PNG)
+![Lighthouse Report. News Page](documentation/lighthouse/news_lihthouse.PNG)
 
-### My Bookings Page
+### Bag page
 
-![Lighthouse Report. My Bookings Page](documentation/lighthouse_reports/mybookings.PNG)
+![Lighthouse Report. Bag Page](documentation/lighthouse/bag_lighthouse.PNG)
+
+### Checkout page
+
+![Lighthouse Report. Checkout Page](documentation/lighthouse/checkout_lighthouse.PNG)
+
 
 # Responsiveness
 
@@ -199,23 +206,29 @@ The responsiveness was checked manually by using devtools (Chrome and Edge) thro
 
 ### Responsive Viewer Home page
 
-![Responsive viewer Home Page](documentation/responsiveness/rvhome.PNG)
+![Responsive viewer Home Page](documentation/responsiveness/home_responsive.PNG)
 
-### Responsive Viewer About page
+### Responsive Viewer Products page
 
-![Responsive viewer About Page](documentation/responsiveness/rvabout.PNG)
+![Responsive viewer Products Page](documentation/responsiveness/products_responsive.PNG)
 
-### Responsive Viewer Make bookings page
+### Responsive Viewer Contact page
 
-![Responsive viewer Make Bookings Page](documentation/responsiveness/rvmakebooking.PNG)
+![Responsive viewer Contact Page](documentation/responsiveness/contact_responsive.PNG)
+
+### Responsive Viewer Checkout page
+
+![Responsive viewer Checkout Page](documentation/responsiveness/checkout_responsive.PNG)
+
+
 
 ### Chrome Dev Tools mobile
 
-![Chrome Dev Tools Main mobile](documentation/responsiveness/chromemain.PNG)
+![Chrome Dev Tools Main mobile](documentation/responsiveness/chromemainmobile.PNG)
 
 ### Chrome Dev Tools Tablet
 
-![Chrome Dev Tools Main Tablet](documentation/responsiveness/chromemobile.PNG)
+![Chrome Dev Tools Main Tablet](documentation/responsiveness/chromemain.PNG)
 
 ### Edge Dev Tools Tablet
 
@@ -227,4 +240,4 @@ The responsiveness was checked manually by using devtools (Chrome and Edge) thro
 
 ### Edge Dev Tools Mobile
 
-![Edge Dev Tools Main Mobile](documentation/responsiveness/edgenarrow.PNG)
+![Edge Dev Tools Main Mobile](documentation/responsiveness/edgemobilesmall.PNG)
